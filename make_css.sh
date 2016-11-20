@@ -13,4 +13,4 @@ cd pitchfork
 make blasr
 
 #install ccs
-make pbccs
+sudo make pbccs
