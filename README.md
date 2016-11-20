@@ -1,10 +1,26 @@
 # README #
 
+Links and Info:
+--------------
 Read the following papers in order:
 
 http://bioinformatics.oxfordjournals.org/content/18/3/452.full.pdf
 
 http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
+
+Repositories to note:
+--------------------
+1) https://sourceforge.net/projects/poamsa/
+   C++ implementation from the main papers' author - Lee
+
+2) https://github.com/ljdursi/poapy
+   Python implementation - Not sure if it has poa-poa alignment
+
+3) https://github.com/mculinovic/cpppoa
+   Another C++ implementation - Not sure if it has any new features
+
+Avi's mail:
+----------
 
 Copy pasting mail from Avi:
 
