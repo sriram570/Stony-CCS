@@ -8,6 +8,8 @@ http://bioinformatics.oxfordjournals.org/content/18/3/452.full.pdf
 
 http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
 
+Basic pysam module docs: http://pysam.readthedocs.io/en/latest/
+
 Repositories to note:
 --------------------
 1) https://sourceforge.net/projects/poamsa/
@@ -60,4 +62,31 @@ NOTE: remember to use ccs with --noPolish flag when comparing.
 
 To run this tools you need to be in the proper environment, which can be invoked by the command: 
 ``bash --init-file deployment/setup-env.sh`` after you have executed the attached bash script."
+
+# a small snippet to read a bam file using pysam  
+import pysam
+bamf = pysam.AlignmentFile('mapt.NA12156.altex.bam', 'rb')
+for i, line in enumerate(bamf.fetch(until_eof=True)):
+    print line
+    if i > 5:
+        break
+bamf.close()
+
+# Notes:
+- Setting up blasr and ccs
+1. execute the command from *pitchfork* directory 
+*bash --init-file deployment/setup-env.sh*
+2. Checking if it is installed:
+2.1 *ccs --version* returns *ccs 2.0.5 (commit 1ef34a1)*
+2.2 *blasr --version* returns *blasr	5.3.e901e48*
+3. then can use *blasr* and *ccs* commands from *any* directory
+
+- the column names for the bam files, printed either from the command-line or through python 
+col_names = 'QNAME\tFLAG\tRNAME\tPOS\tMAPQ\tCIGAR\tRNEXT\tPNEXT\tTLEN\tSEQ\tQUAL\tOPTIONAL'
+
+- sam file is used to store sequence data in a csv-ish format. A bam file is a sam file but compressed and stored as binary
+
+- pysam can read both 'bam' and 'sam' files directly without any conversion between the two formats
+
+- Summary of all this: We will write a python script, use the pysam module to read our dataset bam file, reverse reads if necessary and group them based on id. The output can possibly be stored in a simple text file.
 
