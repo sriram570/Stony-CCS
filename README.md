@@ -64,3 +64,10 @@ NOTE: remember to use ccs with --noPolish flag when comparing.
 
 To run this tools you need to be in the proper environment, which can be invoked by the command: 
 ``bash --init-file deployment/setup-env.sh`` after you have executed the attached bash script."
+
+Essential Commands:
+-------------------
+
+Blasr: https://github.com/PacificBiosciences/blasr/blob/master/README.MANUAL.md
+
+CCS: ccs --noPolish <input subread>.bam <output file>.bam
