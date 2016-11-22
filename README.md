@@ -19,6 +19,10 @@ Repositories to note:
 3) https://github.com/mculinovic/cpppoa
    Another C++ implementation - Not sure if it has any new features
 
+SAM/BAM Format:
+--------------
+https://samtools.github.io/hts-specs/SAMv1.pdf
+
 Avi's mail:
 ----------
 
@@ -60,4 +64,3 @@ NOTE: remember to use ccs with --noPolish flag when comparing.
 
 To run this tools you need to be in the proper environment, which can be invoked by the command: 
 ``bash --init-file deployment/setup-env.sh`` after you have executed the attached bash script."
-
