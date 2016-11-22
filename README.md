@@ -3,12 +3,17 @@
 Links and Info:
 --------------
 Read the following papers in order:
+1) http://bioinformatics.oxfordjournals.org/content/18/3/452.full.pdf
+2) http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
 
-http://bioinformatics.oxfordjournals.org/content/18/3/452.full.pdf
+Pysam module docs:
+http://pysam.readthedocs.io/en/latest/
 
-http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
+Dataset:
+https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/
 
-Basic pysam module docs: http://pysam.readthedocs.io/en/latest/
+SAM/BAM file format:
+https://samtools.github.io/hts-specs/SAMv1.pdf
 
 Repositories to note:
 --------------------
