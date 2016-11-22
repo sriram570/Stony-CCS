@@ -21,6 +21,10 @@ Repositories to note:
 3) https://github.com/mculinovic/cpppoa
    Another C++ implementation - Not sure if it has any new features
 
+SAM/BAM Format:
+--------------
+https://samtools.github.io/hts-specs/SAMv1.pdf
+
 Avi's mail:
 ----------
 
@@ -90,3 +94,10 @@ col_names = 'QNAME\tFLAG\tRNAME\tPOS\tMAPQ\tCIGAR\tRNEXT\tPNEXT\tTLEN\tSEQ\tQUAL
 
 - Summary of all this: We will write a python script, use the pysam module to read our dataset bam file, reverse reads if necessary and group them based on id. The output can possibly be stored in a simple text file.
 
+=======
+Essential Commands:
+-------------------
+
+Blasr: https://github.com/PacificBiosciences/blasr/blob/master/README.MANUAL.md
+
+CCS: ccs --noPolish <input subread>.bam <output file>.bam
