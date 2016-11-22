@@ -99,7 +99,6 @@ col_names = 'QNAME\tFLAG\tRNAME\tPOS\tMAPQ\tCIGAR\tRNEXT\tPNEXT\tTLEN\tSEQ\tQUAL
 
 - Summary of all this: We will write a python script, use the pysam module to read our dataset bam file, reverse reads if necessary and group them based on id. The output can possibly be stored in a simple text file.
 
-=======
 Essential Commands:
 -------------------
 
