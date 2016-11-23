@@ -30,6 +30,10 @@ SAM/BAM Format:
 --------------
 https://samtools.github.io/hts-specs/SAMv1.pdf
 
+Optional Fields:
+----------------
+http://bioinfo-master.ird.fr:8080/smrtanalysis/doc/bioinformatics-tools/pbsamtools/doc/index.html
+
 Avi's mail:
 ----------
 
