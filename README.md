@@ -4,6 +4,7 @@ Links and Info:
 --------------
 Read the following papers in order:
 1) http://bioinformatics.oxfordjournals.org/content/18/3/452.full.pdf
+
 2) http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
 
 Pysam module docs:
@@ -33,6 +34,12 @@ https://samtools.github.io/hts-specs/SAMv1.pdf
 Optional Fields:
 ----------------
 http://bioinfo-master.ird.fr:8080/smrtanalysis/doc/bioinformatics-tools/pbsamtools/doc/index.html
+
+Details of CCS POA:
+---------------
+https://github.com/PacificBiosciences/unanimity/blob/master/src/poa/POA-NOTES.txt
+
+Basically they are using the POA-Sequence comparison idea. NOT the POA-POA comparison idea. Do read this. It also explains the scoring function that CCS use - the one that Avi has used in his slide.
 
 Avi's mail:
 ----------
