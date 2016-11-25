@@ -7,6 +7,7 @@ Read the following papers in order:
 
 2) http://bioinformatics.oxfordjournals.org/content/20/10/1546.full.pdf
 
+3) Details of Consensus builder: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.579.863&rep=rep1&type=pdf
 Pysam module docs:
 http://pysam.readthedocs.io/en/latest/
 
