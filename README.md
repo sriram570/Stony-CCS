@@ -41,6 +41,8 @@ https://github.com/PacificBiosciences/unanimity/blob/master/src/poa/POA-NOTES.tx
 
 Basically they are using the POA-Sequence comparison idea. NOT the POA-POA comparison idea. Do read this. It also explains the scoring function that CCS use - the one that Avi has used in his slide.
 
+The scoring function in code is located inside FindConsensus() in PoaGraphImpl.cpp (https://github.com/PacificBiosciences/unanimity/blob/master/src/poa/PoaGraphImpl.cpp)
+
 Avi's mail:
 ----------
 
