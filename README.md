@@ -123,6 +123,6 @@ Blasr output format:
 --------------------
 https://github.com/PacificBiosciences/blasr/wiki/Blasr-Output-Format
 
-Output of pruned BAM with a random reference genome
+Output of pruned BAM with a random reference genome - Blasr -m 4
 ---------------------------------------------------
-m54113_160913_184949/7864612/ccs/0_3016 2 0 1 -6592 87.0339 10752497 10754180 19698289 11 1752 3016 37278
+m54113_160913_184949/7864612/ccs/0_3016 2 -6592 87.0339 0 11 1752 3016 1 10752497 10754180 19698289 254
