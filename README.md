@@ -4,7 +4,7 @@ Setup:
 -----
 1) Do this to use the poaligner python module:
     a. Make the poa program in external/poaV2
-    b. `bash --init-file setup-env.sh`
+    b. `bash --init-file setup_env.sh`
 
 Links and Info:
 --------------
