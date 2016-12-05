@@ -133,7 +133,9 @@ def convert_po_msa_to_dag(po_msa_file):
         node = {'index': i,
                 'character': char,
                 'incoming': [],
-                'sequences': set()}
+                'sequences': set(),
+                'previous': int,
+                'score': int}
         for data in node_data:
             identifier, number = data[0], int(data[1:])
             if identifier == 'L':
