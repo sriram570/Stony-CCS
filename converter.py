@@ -4,6 +4,23 @@ Module to convert sequence data between various formats
 """
 import pysam
 
+
+_SEQ_COMPLEMENTS = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
+
+def complement(sequence):
+    """
+    Returns a complemented version of a given DNA sequence string
+    """
+    return ''.join(map(lambda s: _SEQ_COMPLEMENTS[s], sequence))
+
+
+def reverse_complement(sequence):
+    """
+    Returns a reversed complemented string of a given DNA sequence string
+    """
+    return complement(sequence)[::-1]
+
+
 def sam_to_bam(sam_file, bam_file, check_sq=False):
     """
     Convert sam to bam file
