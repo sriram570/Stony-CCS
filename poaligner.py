@@ -133,13 +133,13 @@ def convert_po_msa_to_dag(po_msa_file):
         node = {'index': i,
                 'character': char,
                 'incoming': [],
-                'sequences': []}
+                'sequences': set()}
         for data in node_data:
             identifier, number = data[0], int(data[1:])
             if identifier == 'L':
                 node['incoming'].append(number)
             elif identifier == 'S':
-                node['sequences'].append(number)
+                node['sequences'].add(number)
         dag.append(node)
         i += 1
 
