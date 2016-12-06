@@ -2,7 +2,6 @@
 """
 Module to generate consensus sequence
 """
-from grapher import POAGraph
 from poaligner import *
 import sys
 
@@ -74,7 +73,7 @@ def get_max_score_node(dag):
 	return max_node
 
 
-def consensus(dag):
+def do_consensus(dag):
 	"""
 	returns consensus sequence using back-pointers from node with max score
 	"""
@@ -99,5 +98,5 @@ if __name__ == '__main__':
 	score_assignment(dag)
 	
 	# generating consensus
-	sequence = consensus(dag)
+	sequence = do_consensus(dag)
 	print (sequence)
