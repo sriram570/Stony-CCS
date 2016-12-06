@@ -58,8 +58,9 @@ def score_assignment(dag):
 	# computing scores of other nodes
 	for node in dag[1:]:
 		index = node['index']
-		best_prev_node = best_predecessor_node(dag, node, node['incoming'], edge_weights)
-		node['score'] = dag[best_prev_node]['score'] + edge_weights[str(best_prev_node), str(node['index'])]
+		if len(node['incoming']) > 0:
+			best_prev_node = best_predecessor_node(dag, node, node['incoming'], edge_weights)
+			node['score'] = dag[best_prev_node]['score'] + edge_weights[str(best_prev_node), str(node['index'])]
 
 
 def get_max_score_node(dag):
