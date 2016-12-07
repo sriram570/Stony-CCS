@@ -89,6 +89,17 @@ def do_consensus(dag):
 
     return cons_seq[::-1]
 
+
+def consensus_to_fasta(sequence, out_file=None):
+    """
+    write consensus to fasta file "consensus.fa" for blasr comparison
+    """
+    f = open(out_file, 'w')
+    f.write(">consensus\n")
+    f.write(sequence)
+    f.close()
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         exit("Required format: python consensus.py <.po file>")
@@ -100,4 +111,4 @@ if __name__ == '__main__':
     
     # generating consensus
     sequence = do_consensus(dag)
-    print (sequence)
+    consensus_to_fasta(sequence, "consensus.fa")
