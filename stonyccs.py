@@ -67,10 +67,12 @@ def main():
     cur_seq_id = -1
     seqs_well = []
     # Start reading
-    for line in inf.fetch(until_eof=True):
+    for i, line in enumerate(inf.fetch(until_eof=True)):
         qname  = line.qname # Looks like "name/12345/23_34"
         seq_id = int(qname.split('/')[1])
-        if seq_id != cur_seq_id and cur_seq_id != -1:
+        if i == 0:
+            cur_seq_id = seq_id
+        if seq_id != cur_seq_id:
             # Process previous sequences
             process_and_filter_seqs(cur_seq_id, seqs_well, seq_data)
             seqs_well = []
