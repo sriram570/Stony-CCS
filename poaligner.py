@@ -9,6 +9,12 @@ import re
 import subprocess
 import tempfile
 
+PO_DEBUG = True
+def debug(message):
+    if PO_DEBUG:
+        print('DEBUG:', message)
+
+
 # See if poa is accessible when module loads
 with open(os.devnull, 'w') as dnull:
     exit_code = subprocess.call('poa', shell=True, stdout=dnull, stderr=dnull)
@@ -18,7 +24,7 @@ with open(os.devnull, 'w') as dnull:
 
 def _align(input_files_command,
            score_matrix_file,
-           po_out_file,
+           po_out_file=None,
            pir_out_file=None,
            clustal_out_file=None,
            do_global=False,
@@ -31,7 +37,8 @@ def _align(input_files_command,
     poa_command += ' ' + input_files_command
     poa_command += ' ' + score_matrix_file
 
-    poa_command += ' -po ' + po_out_file
+    if po_out_file:
+        poa_command += ' -po ' + po_out_file
     if pir_out_file:
         poa_command += ' -pir ' + pir_out_file
     if clustal_out_file:
@@ -42,15 +49,17 @@ def _align(input_files_command,
     if do_progressive:
         poa_command += ' -do_progressive'
 
-    print('Triggering Partial Order Alignment...')
-    print('Running "%s"' % poa_command)
+    debug('Triggering Partial Order Alignment...')
+    debug('Running "%s"' % poa_command)
 
-    subprocess.check_call(poa_command, shell=True)
+    # Return command output
+    out = subprocess.check_output(poa_command, stderr=subprocess.STDOUT, shell=True)
+    return out
 
 
 def align_sequences_from_fasta_file(fasta_file,
                     score_matrix_file,
-                    po_out_file,
+                    po_out_file=None,
                     pir_out_file=None,
                     clustal_out_file=None,
                     do_global=False,
@@ -59,13 +68,13 @@ def align_sequences_from_fasta_file(fasta_file,
     Align a set of sequences present in a fasta file into a po_msa
     """
     input_files_command = '-read_fasta ' + fasta_file
-    _align(input_files_command, score_matrix_file, po_out_file, 
+    return _align(input_files_command, score_matrix_file, po_out_file, 
             pir_out_file, clustal_out_file, do_global, do_progressive)
 
 
 def align_sequences(sequences,
                     score_matrix_file,
-                    po_out_file,
+                    po_out_file=None,
                     pir_out_file=None,
                     clustal_out_file=None,
                     do_global=False,
@@ -81,11 +90,12 @@ def align_sequences(sequences,
         temp_fasta_file.write(sequence + '\n')
     temp_fasta_file.close()
 
-    align_sequences_from_fasta_file(temp_fasta_file.name, score_matrix_file,
+    out = align_sequences_from_fasta_file(temp_fasta_file.name, score_matrix_file,
                                     po_out_file, pir_out_file, clustal_out_file,
                                     do_global, do_progressive)
-
     os.unlink(temp_fasta_file.name)
+
+    return out
 
 
 def align_po_msas(po_msa_files,
@@ -105,11 +115,31 @@ def align_po_msas(po_msa_files,
     temp_list_file.close()
 
     input_files_command = '-read_msa_list ' + temp_list_file.name
-    _align(input_files_command, score_matrix_file, po_out_file, 
+    out = _align(input_files_command, score_matrix_file, po_out_file, 
             pir_out_file, clustal_out_file, do_global, do_progressive)
 
     os.unlink(temp_list_file.name)
 
+    return out
+
+
+def get_best_score(sequences, score_matrix_file, do_global=False):
+    """
+    Get the best score for two sequences
+    """
+    if len(sequences) > 2:
+        raise ValueError("get_best_score: Cannot get score for >2 sequences")
+
+    out_data = align_sequences(sequences, score_matrix_file=score_matrix_file,
+                                do_global=do_global, do_progressive=False)
+
+    last_line  = out_data.splitlines()[-1]
+    best_score = re.search('score = (\d+)', last_line).groups()[-1]
+
+    return int(best_score)
+
+
+# ==============================================================================
 
 def convert_po_msa_to_dag(po_msa_file):
     """
