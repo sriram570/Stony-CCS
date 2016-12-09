@@ -1,0 +1,17 @@
+Note on PacBio's consensus generation:
+
+1. Scoring function used for vertices --> (2 * numReads[v] - coverage[v] - epsilon)
+	where,
+		epsilon -  0.0001
+		numReads[v] (or) containingReads
+			- number of reads going through node 'v'
+		coverage[v] (or) SpanningReads
+			- number of reads that pass through 'v' + 
+				(number of other reads which pass through at least one ancestor and one descendant of 'v')
+			PacBio uses a "tagSpan" approach to calculate coverage of a vertex, i.e. whenever a read is added, the spanning coverage of all of all vertices "covered" by the read are incremented.
+
+2. Consensus generation
+	Consensus is calculated by looking for a path maximizing the score determined as a sum of vertex scores obtained using the above scoring function.
+
+3. Scoring function used by PacBio is implemented here:
+	https://github.com/PacificBiosciences/unanimity/blob/1c091914c9615db49d26f270add9498fea3de3b3/src/poa/PoaGraphTraversals.cpp#L114
