@@ -1,17 +1,53 @@
 Note on PacBio's consensus generation:
 
 1. Scoring function used for vertices --> (2 * numReads[v] - coverage[v] - epsilon)
-	where,
-		epsilon -  0.0001
-		numReads[v] (or) containingReads
-			- number of reads going through node 'v'
-		coverage[v] (or) SpanningReads
-			- number of reads that pass through 'v' + 
-				(number of other reads which pass through at least one ancestor and one descendant of 'v')
-			PacBio uses a "tagSpan" approach to calculate coverage of a vertex, i.e. whenever a read is added, the spanning coverage of all of all vertices "covered" by the read are incremented.
+    where,
+        epsilon -  0.0001
+        numReads[v] (or) containingReads
+            - number of reads going through node 'v'
+        coverage[v] (or) SpanningReads
+            - number of reads that pass through 'v' + 
+                (number of other reads which pass through at least one ancestor and one descendant of 'v')
+            - PacBio uses a "tagSpan" approach to calculate coverage of a vertex,
+              i.e. whenever a read is added, the spanning coverage of all vertices "covered" by the read are incremented.
 
 2. Consensus generation
-	Consensus is calculated by looking for a path maximizing the score determined as a sum of vertex scores obtained using the above scoring function.
+    Consensus is calculated by looking for a path maximizing the score determined as a
+    sum of vertex scores obtained using the above scoring function.
 
 3. Scoring function used by PacBio is implemented here:
-	https://github.com/PacificBiosciences/unanimity/blob/1c091914c9615db49d26f270add9498fea3de3b3/src/poa/PoaGraphTraversals.cpp#L114
+    https://github.com/PacificBiosciences/unanimity/blob/1c091914c9615db49d26f270add9498fea3de3b3/src/poa/PoaGraphTraversals.cpp#L114
+
+
+Alternative POA graph traversal options:
+
+1. Max Incoming Edge - POA Traversal    
+    - instead of backtracking from the node with maximum score, a node with maximum 
+    incoming edge could be chosen for backtracking and building the consensus
+    - nodes with maximum incoming edges are more likely to be the most important nodes in the POA graph
+    as most reads would pass through them. Thus, can backtrack from one such node
+    - if more than one such node exists, chose the one with max index number (as the nodes are
+    topologically sorted and the last such node would have the max index value)
+
+2. Selective Random Node Selection - POA Traversal
+    - identify the node with max score (max_score)
+    - fix a optimal value of range (w.r.t max_score)
+    - find a subset of nodes such that
+            (max_score - range) <= score(node) <= max_score
+      i.e. find all nodes having scores within a given range of max_score 
+    - randomly select a node from the subset
+    - backtrack to build consensus
+
+3. 1 & 2 combined
+    - find a subset of nodes (obtained in 2)
+    - from the subset, choose a node with max number of incoming edges (as in 1)
+
+4. Got to add a few more, if possible!
+
+
+Alternative scoring functions
+
+1. Score(node) = 2*#contained_reads - span(#outgoing_edges)
+    Note:  Span used by PacBio is a bit ambiguous (defined at the top of this doc)
+
+2. Got to add a few more!
