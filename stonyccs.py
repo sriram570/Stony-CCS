@@ -2,7 +2,7 @@
 
 from   consensus import score_assignment, do_consensus
 from   converter import reverse_complement
-from   poaligner import align_sequences, convert_po_msa_to_dag
+from   poaligner import align_sequences, convert_po_msa_to_dag, get_best_score
 
 import argparse
 import os
@@ -86,7 +86,86 @@ def do_median_filter(seqs_well):
         if (seq_length / 2.0) < median < (seq_length * 2.0):
             out_seqs_well.append(seq)
     return out_seqs_well
+
+
+# ========================== Ordering Heuristics ===============================
+
+def star_algorithm_ordering(sequences, score_matrix_file, only_forward=False):
+    """
+    Order the sequences using the STAR alogirthm
     
+    If only_forward is 
+    The problem here is we don't know if the strands are in the forward/reverse
+    direction. So, we perform a slight tweak on the original STAR algorithm.
+
+    For each strand, we take the forward and reverse versions and find the alignment score
+    with the forward and reverse versions of all other strands. We then compute the
+    overall distance for each forward and reverse version of each strand with all
+    other strands in both forward and reverse directions. Note that for a strand
+    S_c, we will choose the maximum among the forward and reverse alignment scores
+    with another strand S_i (Same will be done for all other strands)
+    """
+    print("Doing STAR algorithm ordering for %s seqs..." % len(sequences))
+    seq_data = {i: {'fw': seq,
+                    'rv': reverse_complement(seq)} for i, seq in enumerate(sequences)}
+
+    neg_inf  = -float("inf")
+
+    scores = {}
+    fw, rv = 'fw', 'rv'
+    # Assign scores
+    for i in range(len(seq_data)):
+        for j in range(i+1, len(seq_data)):
+            i_fw_seq, j_fw_seq = seq_data[i]['fw'], seq_data[j]['fw']
+            scores.setdefault((i,j), {})
+            scores.setdefault((j,i), {})
+            # Only forward scores first
+            fw_fw_score = get_best_score([i_fw_seq, j_fw_seq], score_matrix_file)
+            scores[(i,j)][(fw,fw)] = fw_fw_score
+            scores[(j,i)][(fw,fw)] = fw_fw_score
+            if not only_forward:
+                i_rv_seq, j_rv_seq = seq_data[i]['rv'], seq_data[j]['rv']
+                # Reverse-reverse scores
+                rv_rv_score = get_best_score([i_rv_seq, j_rv_seq], score_matrix_file)
+                scores[(i,j)][(rv,rv)] = rv_rv_score
+                scores[(j,i)][(rv,rv)] = rv_rv_score
+                # Cross pairing
+                i_fw_j_rv_score = get_best_score([i_fw_seq, j_rv_seq], score_matrix_file)
+                i_rv_j_fw_score = get_best_score([i_rv_seq, j_fw_seq], score_matrix_file)
+                scores[(i,j)][(fw,rv)] = i_fw_j_rv_score
+                scores[(i,j)][(rv,fw)] = i_rv_j_fw_score
+                scores[(j,i)][(fw,rv)] = i_rv_j_fw_score
+                scores[(j,i)][(rv,fw)] = i_fw_j_rv_score
+
+    # Choose best
+    best_scores = {}
+    for i in range(len(seq_data)):
+        for orntn in ('fw', 'rv'):
+            if only_forward and orntn == 'rv': continue
+            score = 0
+            for j in range(len(seq_data)):
+                if i == j: continue
+                score += max(scores[(i,j)][(orntn,'fw')], scores[(i,j)].get((orntn,'rv'),neg_inf))
+            if score not in best_scores:
+                best_scores[score] = (i, orntn)
+
+    best_i, orntn = best_scores[max(best_scores)]
+    ordered_scores = []
+    for j in range(len(seq_data)):
+        if j == best_i: continue
+        best_orntn = 'fw' if scores[(best_i,j)][(orntn,'fw')] >= scores[(best_i,j)].get((orntn,'rv'),neg_inf) else 'rv'
+        best_score = scores[(best_i,j)][(orntn,best_orntn)]
+        ordered_scores.append([j, best_orntn, best_score])
+    ordered_scores = sorted(ordered_scores, key=lambda s: s[2])
+
+    # Order and return
+    final_ordered_sequences = [seq_data[best_i][orntn]]
+    for el in ordered_scores:
+        final_ordered_sequences.append(seq_data[el[0]][el[1]])
+
+    return final_ordered_sequences
+
+
 # ============================= Main Read Sanitizer ============================
 
 def process_and_filter_seqs(cur_seq_id, seqs_well, seq_data):
@@ -112,11 +191,13 @@ def process_and_filter_seqs(cur_seq_id, seqs_well, seq_data):
 
     log_info('Adding %s sequences with id %s for ccs' % (len(seqs_well), cur_seq_id))
     # Good to add these sequences for this id to our seq_data for doing ccs
-    seq_data[cur_seq_id] = {'sequences': []}
-    for i, seq in enumerate(seqs_well):
+    sequences = [s.query for s in seqs_well]
+    seq_data[cur_seq_id] = {'sequences': sequences}
+    #for i, seq in enumerate(seqs_well):
         # Reverse-complement every odd-numbered sequence
-        seq_string = seq.query if i % 2 == 0 else reverse_complement(seq.query)
-        seq_data[cur_seq_id]['sequences'].append(seq_string)
+        # seq_string = seq.query if i % 2 == 0 else reverse_complement(seq.query)
+        #seq_data[cur_seq_id]['sequences'].append(seq_string)
+
 
 
 # =============================== Main CCS =====================================
@@ -125,7 +206,9 @@ def do_stonyccs(seqs, score_matrix_file):
     po_msa_f = tempfile.NamedTemporaryFile(delete=False)
     po_msa_f.close()
 
-    align_sequences(seqs, score_matrix_file, po_msa_f.name)
+    ordered_seqs = star_algorithm_ordering(seqs, score_matrix_file)
+
+    align_sequences(ordered_seqs, score_matrix_file, po_msa_f.name, do_progressive=False)
     dag = convert_po_msa_to_dag(po_msa_f.name)
     os.unlink(po_msa_f.name)
 
@@ -163,7 +246,8 @@ def parse_opts():
 
     parser.add_argument("--disable_features", help="Comma-separated feature names to disable")
 
-    parser.add_argument("--log_file", type=str, help="Log file to write logs to")
+    parser.add_argument("--log_file", type=str,
+        help="Log file to write logs to. Defaults to stonyccs_report.txt in cwd")
 
     opts = parser.parse_args()
 
