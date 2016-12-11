@@ -37,8 +37,8 @@ ORDERING_ALGOS    = ["star_only_forward",
                      "no_star_progressive",
                      "no_star_alternate_reversed_progressive"]
 MY_ORDERING_ALGO  = "star_forward_reverse"
-MY_SCORING_FUNC   = "func-A"
-MY_TRAVERSAL_ALGO = "traversal-1"
+MY_SCORING_FUNC   = "edge_weight_based_score"
+MY_TRAVERSAL_ALGO = "max_score"
 
 
 # Logger
@@ -232,9 +232,11 @@ def do_stonyccs(well_id, seqs, score_matrix_file):
     dag = convert_po_msa_to_dag(po_msa_f.name)
     os.unlink(po_msa_f.name)
 
-    # Convert to final CCS
-    score_assignment(dag, scoring_func=MY_SCORING_FUNC, traversal_algo=MY_TRAVERSAL_ALGO)
-    ccs = do_consensus(dag, scoring_func=MY_SCORING_FUNC, traversal_algo=MY_TRAVERSAL_ALGO)
+    # convert to final CCS
+    # assignment of scoring function
+    scoring_function(dag, scoring_func=MY_SCORING_FUNC)
+    # generating consensus based on given traversal algorithm
+    ccs = do_consensus(dag, traversal_algo=MY_TRAVERSAL_ALGO)
 
     return ccs
 

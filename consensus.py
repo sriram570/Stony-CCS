@@ -7,11 +7,13 @@ import random
 import sys
 
 # Allowed scoring functions and traversal algorithms
-SCORING_FUNCTIONS = ["func-A",
-                     "func-B"]
-TRAVERSAL_ALGOS   = ["traversal-1",
-                     "traversal-2",
-                     "traversal-3"]
+SCORING_FUNCTIONS = ["edge_weight_based_score",
+                     "pb_like_score"]
+TRAVERSAL_ALGOS   = ["max_score",
+                     "max_in_edges",
+                     "max_sequences",
+                     "random",
+                     "optimal_random"]
 
 # ========================================== INITIALIZATIONS =================================================
 
@@ -59,7 +61,7 @@ def best_predecessor_node(dag, node, incoming_nodes, edge_weights):
     return node['previous']
 
 
-def score_assignment(dag, scoring_func=None, traversal_algo=None):
+def score_assignment(dag):
     """
     scoring function to initialize node scores and edge weights
     Computes & assigns best score for all nodes in DAG
@@ -105,6 +107,15 @@ def pb_like_score_assignment(dag):
     for node in dag:
         node['score'] = 2*len(node['sequences']) - node['outgoing']
         best_predecessor_node(dag, node, node['incoming'], edge_weights) # computes back-pointer
+
+
+# ========================================= INVOKING SCORING FUNCTIONS =========================================
+
+def scoring_function(dag, scoring_func):
+    if scoring_func == "edge_weight_based_score":
+        score_assignment(dag)
+    elif scoring_func == "pb_like_score":
+        pb_like_score_assignment(dag)
 
 
 # ================================ MULTIPLE TRAVERALS TO OBTAIN CONSENSUS  ====================================
@@ -183,18 +194,23 @@ def optimal_random_node(dag):
 
 # ========================================= CONSENSUS GENERATION ==============================================
 
-def do_consensus(dag, scoring_func=None, traversal_algo=None):
+def do_consensus(dag, traversal_algo):
     """
     returns consensus sequence using back-pointers from a selected node
     """
     cons_seq = ""
 
     # node selection alternatives for POA traversal
-    max_node = get_max_score_node(dag)      #1
-    #max_node = max_in_edges_node(dag)      #2
-    #max_node = max_seq_node(dag)           #3
-    #max_node = random_node(dag)            #4
-    #max_node = optimal_random_node(dag)    #5
+    if traversal_algo == "max_score":
+        max_node = get_max_score_node(dag)
+    elif traversal_algo == "max_in_edges":
+        max_node = max_in_edges_node(dag)
+    elif traversal_algo == "max_sequences":
+        max_node = max_seq_node(dag)
+    elif traversal_algo == "random":
+        max_node = random_node(dag)
+    elif traversal_algo == "optimal_random":
+        max_node = optimal_random_node(dag)
 
     cons_seq += max_node['character']
     while max_node['previous']:
@@ -223,9 +239,8 @@ if __name__ == '__main__':
     dag = convert_po_msa_to_dag(po_msa_file)
 
     # assigning edge-weights & node scores
-    score_assignment(dag)           # scoring function #1
-    #pb_like_score_assignment(dag)  # scoring function #2
+    scoring_function(dag, "pb_like_score")
 
     # generating consensus
-    sequence = do_consensus(dag)
+    sequence = do_consensus(dag, "max_in_edges")
     consensus_to_fasta(sequence, "consensus.fa")
