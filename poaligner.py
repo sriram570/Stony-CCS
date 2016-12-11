@@ -165,7 +165,8 @@ def convert_po_msa_to_dag(po_msa_file):
                 'incoming': [],
                 'sequences': set(),
                 'previous': int,
-                'score': int}
+                'score': int,
+                'outgoing': int}
         for data in node_data:
             identifier, number = data[0], int(data[1:])
             if identifier == 'L':
