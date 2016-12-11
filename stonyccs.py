@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-from   consensus import score_assignment, do_consensus
-from   converter import reverse_complement
-from   poaligner import align_sequences, convert_po_msa_to_dag, get_best_score
+from   consensus import (score_assignment, do_consensus,
+                         SCORING_FUNCTIONS, TRAVERSAL_ALGOS)
+from   converter import  reverse_complement
+from   poaligner import  align_sequences, convert_po_msa_to_dag, get_best_score
 
 import argparse
 import os
@@ -29,7 +30,16 @@ MIN_SNR           = 3.75
 MIN_READ_LENGTH   = 10
 MAX_READ_LENGTH   = 7000
 
-DISABLED_FEATURES = []
+DO_FILTERING      = True
+ORDERING_ALGOS    = ["star_only_forward",
+                     "star_forward_reverse",
+                     "no_star_iterative",
+                     "no_star_progressive",
+                     "no_star_alternate_reversed_progressive"]
+MY_ORDERING_ALGO  = "star_forward_reverse"
+MY_SCORING_FUNC   = "func-A"
+MY_TRAVERSAL_ALGO = "traversal-1"
+
 
 # Logger
 LOG_FH = None
@@ -105,7 +115,6 @@ def star_algorithm_ordering(sequences, score_matrix_file, only_forward=False):
     S_c, we will choose the maximum among the forward and reverse alignment scores
     with another strand S_i (Same will be done for all other strands)
     """
-    print("Doing STAR algorithm ordering for %s seqs..." % len(sequences))
     seq_data = {i: {'fw': seq,
                     'rv': reverse_complement(seq)} for i, seq in enumerate(sequences)}
 
@@ -176,45 +185,56 @@ def process_and_filter_seqs(cur_seq_id, seqs_well, seq_data):
         return
 
     # Save read order for later access if necessary
-    read_order = {s.qname: i for (i, s) in enumerate(seqs_well)}
+    read_order = {s.query: i for (i, s) in enumerate(seqs_well)}
 
     # Filters
     # A lot of redundant looping here. Optimize?
-    seqs_well = do_adapter_filter(seqs_well)
-    seqs_well = do_read_quality_filter(seqs_well)
-    seqs_well = do_snr_filter(seqs_well)
-    seqs_well = do_length_filter(seqs_well)
-    seqs_well = do_median_filter(seqs_well)
+    if DO_FILTERING:
+        seqs_well = do_adapter_filter(seqs_well)
+        seqs_well = do_read_quality_filter(seqs_well)
+        seqs_well = do_snr_filter(seqs_well)
+        seqs_well = do_length_filter(seqs_well)
+        seqs_well = do_median_filter(seqs_well)
 
     if not enough_required_sequences(seqs_well):
         return
 
-    log_info('Adding %s sequences with id %s for ccs' % (len(seqs_well), cur_seq_id))
+    log_info('Adding %s sequences with id %s for ccs (filtered?=%s)' % (len(seqs_well), cur_seq_id, DO_FILTERING))
     # Good to add these sequences for this id to our seq_data for doing ccs
     sequences = [s.query for s in seqs_well]
     seq_data[cur_seq_id] = {'sequences': sequences}
-    #for i, seq in enumerate(seqs_well):
-        # Reverse-complement every odd-numbered sequence
-        # seq_string = seq.query if i % 2 == 0 else reverse_complement(seq.query)
-        #seq_data[cur_seq_id]['sequences'].append(seq_string)
-
+    if MY_ORDERING_ALGO == 'no_star_alternate_reversed_progressive':
+        for i, seq in enumerate(sequences):
+            # Reverse-complement every odd-numbered sequence
+            real_index = read_order[seq]
+            if real_index % 2 != 0:
+                seq_data[cur_seq_id]['sequences'][i] = reverse_complement(seq)
 
 
 # =============================== Main CCS =====================================
 
-def do_stonyccs(seqs, score_matrix_file):
+def do_stonyccs(well_id, seqs, score_matrix_file):
     po_msa_f = tempfile.NamedTemporaryFile(delete=False)
     po_msa_f.close()
 
-    ordered_seqs = star_algorithm_ordering(seqs, score_matrix_file)
+    if MY_ORDERING_ALGO == 'star_only_forward':
+        ordered_seqs = star_algorithm_ordering(seqs, score_matrix_file, only_forward=True)
+    elif MY_ORDERING_ALGO == 'star_forward_reverse':
+        ordered_seqs = star_algorithm_ordering(seqs, score_matrix_file, only_forward=False)
+    else:
+        ordered_seqs = seqs
 
-    align_sequences(ordered_seqs, score_matrix_file, po_msa_f.name, do_progressive=False)
+    do_progressive = False
+    if MY_ORDERING_ALGO in ('no_star_progressive', 'no_star_alternate_reversed_progressive'):
+        do_progressive = True
+
+    align_sequences(ordered_seqs, score_matrix_file, po_msa_f.name, do_progressive=do_progressive)
     dag = convert_po_msa_to_dag(po_msa_f.name)
     os.unlink(po_msa_f.name)
 
     # Convert to final CCS
-    score_assignment(dag)
-    ccs = do_consensus(dag)
+    score_assignment(dag, scoring_func=MY_SCORING_FUNC, traversal_algo=MY_TRAVERSAL_ALGO)
+    ccs = do_consensus(dag, scoring_func=MY_SCORING_FUNC, traversal_algo=MY_TRAVERSAL_ALGO)
 
     return ccs
 
@@ -223,7 +243,8 @@ def do_stonyccs(seqs, score_matrix_file):
 
 def parse_opts():
     global MIN_REQUIRED_SEQS, MIN_READ_QUALITY, MIN_SNR, MIN_READ_LENGTH, \
-           MAX_READ_LENGTH, LOG_FH
+           MAX_READ_LENGTH, LOG_FH, MY_ORDERING_ALGO, MY_SCORING_FUNC, \
+           MY_TRAVERSAL_ALGO, DO_FILTERING
 
     parser = argparse.ArgumentParser()
 
@@ -244,7 +265,21 @@ def parse_opts():
     parser.add_argument("--max_read_length", type=int,
         help="Max. read length limit for ccs (default %s)" % MAX_READ_LENGTH)
 
-    parser.add_argument("--disable_features", help="Comma-separated feature names to disable")
+    parser.add_argument("--disable_filters", action="store_true",
+        help="If this flag is set, no filtering will be done (but wells with \n"
+             "lesser than MIN_REQUIRED_SEQS sequences will still be rejected)")
+    parser.add_argument("--ordering_algo", type=str,
+        help=("Ordering algorithm to use. Specify one in \n" + 
+              "[" + ", ".join(ORDERING_ALGOS) + "]\n"
+              "(default %s)" % MY_ORDERING_ALGO))
+    parser.add_argument("--scoring_func", type=str,
+        help=("Graph scoring function to use. Specify one in \n" + 
+              "[" + ", ".join(SCORING_FUNCTIONS) + "]\n"
+              "(default %s)" % MY_SCORING_FUNC))
+    parser.add_argument("--traversal_algo", type=str,
+        help=("Graph traversal algorithm to use. Specify one in \n" + 
+              "[" + ", ".join(TRAVERSAL_ALGOS) + "]\n"
+              "(default %s)" % MY_TRAVERSAL_ALGO))
 
     parser.add_argument("--log_file", type=str,
         help="Log file to write logs to. Defaults to stonyccs_report.txt in cwd")
@@ -261,6 +296,20 @@ def parse_opts():
         MIN_READ_LENGTH = opts.min_read_length
     if opts.max_read_length:
         MAX_READ_LENGTH = opts.max_read_length
+
+    DO_FILTERING = not(opts.disable_filters)
+    if opts.ordering_algo:
+        if opts.ordering_algo not in ORDERING_ALGOS:
+            raise ValueError("Invalid ordering algo: " + opts.ordering_algo)
+        MY_ORDERING_ALGO = opts.ordering_algo
+    if opts.scoring_func:
+        if opts.scoring_func not in SCORING_FUNCTIONS:
+            raise ValueError("Invalid scoring function: " + opts.scoring_func)
+        MY_SCORING_FUNC = opts.scoring_func
+    if opts.traversal_algo:
+        if opts.traversal_algo not in TRAVERSAL_ALGOS:
+            raise ValueError("Invalid traversal algo: " + opts.traversal_algo)
+        MY_TRAVERSAL_ALGO = opts.traversal_algo
 
     if not opts.log_file:
         opts.log_file = os.path.join(os.getcwd(), 'stonyccs_report.txt')
@@ -294,9 +343,13 @@ def main():
     process_and_filter_seqs(cur_seq_id, seqs_well, seq_data)
 
     # Step 2: Do ccs for chosen wells
+    log_info("Configuration for ccs - "
+             "Ordering_algo: {0}, Scoring_function: {1}, Traversal_algo: {2}, "
+             "Doing Filtering?: {3}".format(MY_ORDERING_ALGO, MY_SCORING_FUNC,
+                                            MY_TRAVERSAL_ALGO, DO_FILTERING))
     ccs_seqs = {}
     for well_id in seq_data:
-        ccs_seq = do_stonyccs(seq_data[well_id]['sequences'], opts.matrix_file)
+        ccs_seq = do_stonyccs(well_id, seq_data[well_id]['sequences'], opts.matrix_file)
         ccs_seqs[well_id] = ccs_seq
 
     # Step 3: Write output to fasta file 

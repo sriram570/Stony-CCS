@@ -9,7 +9,7 @@ import re
 import subprocess
 import tempfile
 
-PO_DEBUG = True
+PO_DEBUG = False
 def debug(message):
     if PO_DEBUG:
         print('DEBUG:', message)
