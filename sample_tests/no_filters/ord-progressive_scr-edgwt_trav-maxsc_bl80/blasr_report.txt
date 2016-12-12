@@ -1,0 +1,175 @@
+    nMatch: 1285
+ nMisMatch: 73
+      nIns: 95
+      nDel: 518
+      %sim: 65.1953
+     Score: -2922
+         Query: 7864612/stonyccs/0_7205
+        Target: 2
+         Model: a hybrid of global/local non-affine alignment
+     Raw score: -2922
+        Map QV: 254
+  Query strand: 0
+ Target strand: 1
+   QueryRange: 1260 -> 2713 of 7205
+  TargetRange: 10739246 -> 10741122 of 19698289
+    1260  GTAGAACCTAAG-TGGTTGAG-A-GGGAAGA-ACTAT-GGGTTCCT--AT
+          |||||||||||| |||||||| | ||*|||| ||| | ||||||||  ||
+10739246  GTAGAACCTAAGATGGTTGAGCATGGAAAGATACT-TGGGGTTCCTGAAT
+
+    1303  TTGGATTGGAGTGCGCCCATCATCGTTGTGAAGAGAGAAAT-ATAGCTTT
+          || |||||||||||||||||||||||||||***|||||||| ||||||||
+10739295  TT-GATTGGAGTGCGCCCATCATCGTTGTGTCCAGAGAAATAATAGCTTT
+
+    1352  GGTC-TATCAGAGTC-T---GC--C------A-C---A-ATAGGAAGCCG
+           | | |||||||||| |   ||  |      | |   | |||||||| |*
+10739344  -G-CGTATCAGAGTCTTGCAGCTGCTTGAGGACCGGAACATAGGAAG-CA
+
+    1384  TTCAGTCCATGAG-AAGCCATCGAACTTCTGAA--TCCAC-GGGACTCCA
+          ||||| ||||||| ||*|| |||||||||||||  ||||| |*||||||*
+10739391  TTCAG-CCATGAGAAATCC-TCGAACTTCTGAACCTCCACAGTGACTCCT
+
+    1430  CTAGAGCCATG--C-TCTTAATGGCGAAACCAAGCCTTCATTGCAATATG
+          || ||| **||  | |*||||||||| |||||||||||||||||   | |
+10739439  CT-GAG-GTTGTCCATATTAATGGCG-AACCAAGCCTTCATTGC---A-G
+
+    1477  -ATAGGTGATCTCATTAGTC-CAAGATG------AACTGTCT-AGGGGCC
+           ||||*|||||||||||||| |||||||      ||||*||| |||||||
+10739482  CATAGTTGATCTCATTAGTCACAAGATGAAACACAACTTTCTCAGGGGCC
+
+    1518  TT-GAATT--------TAG---------C------A--AG-----A---T
+          || |||||        |||         |      |  ||     |   |
+10739532  TTGGAATTGAGAGCAGTAGAATTAACCACAACAGAAGTAGCAATAATGTT
+
+    1534  ATCGGAAAATACACAGAAATGGT---G--TGTTAAAT--GTGAGTGTTCG
+          |||||||||*|||||||||||||   |  ||||  ||  |||||| ||||
+10739582  ATCGGAAAACACACAGAAATGGTAGAGACTGTT--ATCCGTGAGT-TTCG
+
+    1577  -------A--A----------T-AGAG-TCTCTGTAAG-----ATTCTGA
+                 |  |          | |||| ||||||||||     |||||||
+10739629  AATCAACACGACTCCTTTCCTTAAGAGTTCTCTGTAAGTCTAAATTCTGA
+
+    1601  AACGCATTCGCTAGTGAG-C---CACCAAGACAGTAAGAGAC-CTTAGGC
+          ||| ||||||*||||||| |   |||||||||||||| |||| |||||||
+10739679  AAC-CATTCGGTAGTGAGACGAACACCAAGACAGTAA-AGACTCTTAGGC
+
+    1646  AC-T--TC--C-GCAATCTGTTCCATAC----AATTATTCTCGCTAACGG
+          || |  ||  | |||||||| |||||||    ||*|*|||||||||||||
+10739727  ACTTCCTCAGCAGCAATCTG-TCCATACTTGGAACTCTTCTCGCTAACGG
+
+    1686  AACTCAATTTTGTTCTTCAAAGAGCCTGAAATCGAGGCCTTAAGCCTCAT
+          ||||| | |||||||||| ||||||||| |||||||||||||||||||||
+10739776  AACTC-A-TTTGTTCTTC-AAGAGCCTG-AATCGAGGCCTTAAGCCTCAT
+
+    1736  AATC--AG-A-CAATAGC-TAGGGAAGC-GC-GAGGCTTGATAGAAC-AA
+          ||||  || | ||*||*| |||*||||| || || ||||||||*||| ||
+10739822  AATCATAGTAGCACTATCATAGTGAAGCTGCTGA-GCTTGATATAACAAA
+
+    1778  ACAGCCAGGTCACGAA-AGTAGACTCAGATTCCAAGAGACGGTCAAGGGA
+          |||||||*|||||||| |||||||||||||||| | ||||*|||||||||
+10739871  ACAGCCATGTCACGAATAGTAGACTCAGATTCC-A-AGACAGTCAAGGGA
+
+    1827  CTTCTCCTA-T-GC-GCACTCGATAAAAGCAACTGAGGAGGTACGGATCT
+          ||||||||| | || ||||||||||||||||||||| |||*|||||||||
+10739919  CTTCTCCTAGTAGCAGCACTCGATAAAAGCAACTGA-GAGTTACGGATCT
+
+    1874  -AGCACGTTAAGAGTCCC-AGCAAACTAGAAGA---TTAC-GTCGTTAGC
+           ||||| || | |||||| |||||||| |||||   |||| *||*|||||
+10739968  GAGCAC-TT-A-AGTCCCAAGCAAACT-GAAGATTCTTACTTTCTTTAGC
+
+    1918  AAATGAC-ACAAAAGC-TTAGCAAGAGCAATGTTACGATCA--AA-GT-A
+           |||||| |||||||| |||||||||||||| *|  |||||  || *| |
+10740014  -AATGACAACAAAAGCTTTAGCAAGAGCAAT-CT--GATCATTAACTTGA
+
+    1962  AG-GTCAAC-G-ATTA-AATTTTTGAAGGA--T--T-A--C-G-------
+          *| | |||| | |*|| *|   *|*|| *|  |  | |  | *       
+10740060  CGAG-CAACGGAAGTAGGA---CTCAA-CATTTCCTCAGTCATATTCATA
+
+    1993  --------------G----TAC-----CGTCGCTGC-CAAAAG-AAGGGT
+                        |    |||     ||||||||| |||||| ||||||
+10740105  CCCTCTACAAATTTGTCATTACGGTAACGTCGCTGCACAAAAGAAAGGGT
+
+    2018  T-G-A--TAGAAAAGGTTGAAATCGAAC-AAAGACG-GATGTTTTGGAGA
+          | | |  ||| *||  |||||||||||| |||||*| ||| *||| ||||
+10740155  TCGAATTTAG-CAA--TTGAAATCGAACAAAAGAAGAGAT-CTTT-GAGA
+
+    2062  TTG-ATATA-C--AGTTAATAGAAGGG-GTAGGTATTCAATATGACCAG-
+          ||| ||||| |  || *||||| |||| *||||  |||||||||||||| 
+10740200  TTGAATATACCTTAG-GAATAG-AGGGTCTAGG--TTCAATATGACCAGC
+
+    2106  --T-----------------------------------------------
+            |                                               
+10740246  TTTGGAGAGAATGAGAAAGAAGAGCAGGAGGGCAATACCAGAGAGAACCC
+
+    2107  --------------------------------------------------
+                                                            
+10740296  ACCATACCACATTCGAGATCTTCCTCCGTCCAGCTCTCCGGAAACTATCC
+
+    2107  --------------------------------------------------
+                                                            
+10740346  CCTCCTCTCCTTCTCATAGTTACTGTACTCGCAGAGCTGTGTAAAACCCA
+
+    2107  --------------------------------------------------
+                                                            
+10740396  GATCTTATAAATGAATGATGATGGTGGAAGTATTCGGATCTGAGAATTTT
+
+    2107  ----------------------------------------------G--G
+                                                        |  |
+10740446  GTCGGGAGAAGCAAAAATAGCTCAACCGACCATCTTCTTTCTCTTCGCTG
+
+    2109  -------------A---A--------T-AG--T-AAGTAACTATTTGTGA
+                       |   |        | ||  | |||||||||||| |  
+10740496  CAAAAAACCTCGAATTCACCCTTCTTTGAGAATCAAGTAACTATTT-T--
+
+    2131  ATTTTGTAA-AGAGTG-TAAAAGAC-TATCTAGCCTCTTTT--CTTTCAA
+          *|||||||| |||||| |||||||| ||||||*||||||||  |||||||
+10740543  TTTTTGTAAGAGAGTGTTAAAAGACATATCTACCCTCTTTTGGCTTTCAA
+
+    2176  TTTCTCATAAAG-T-G-TTGGACTTTGGAACTAAGATAAGGGTGTTTTGG
+          |||||| | ||| | | ||||||||||||||| |*||||    *||||||
+10740593  TTTCTC-T-AAGCTAGTTTGGACTTTGGAACT-ATATAA----ATTTTGG
+
+    2223  ATCTTCAAGCC-AAAAACTACATAACAAAGCCAAAAACTTCATCCACCAC
+           |||||||||| |||||||||||||||||||||||||||||||||| |||
+10740636  -TCTTCAAGCCAAAAAACTACATAACAAAGCCAAAAACTTCATCCA-CAC
+
+    2272  ACAATCCGAGCCAATTGTCTCCACCACGGGGGAAGTAGCTCTGGGCAAAA
+           *|||||||||||||| | ||| ||||***|| |||||||||||||   |
+10740684  -TAATCCGAGCCAATT-T-TCC-CCACTTTGG-AGTAGCTCTGGGC---A
+
+    2322  TGTCGGTATTTCAGGTCAAGGTTCGGGT--ATTTTTTC---TTGTATTTT
+          |||||||| |||||||| ||||||||*|  |*||||||   |||*| *||
+10740726  TGTCGGTA-TTCAGGTC-AGGTTCGGATCAAATTTTTCGGATTGGA-GTT
+
+    2367  GTTTTGGGATTTAGCAATTTTGGATTTTTTTTTCCTTT--ATAATT-GTA
+           |||*||| |||||*||||||||| |||||||| ||||  |||*|| | |
+10740773  -TTTCGGG-TTTAGAAATTTTGGA-TTTTTTTT-CTTTCCATATTTAG-A
+
+    2414  AATGTTGGATATGTT--TTCTA-ACATACACTTTTGAAATTGTGTTAGGT
+          |||*|||||||||||  *| || ||*||||*||||| |||||*||| *| 
+10740818  AATTTTGGATATGTTGGGT-TATACGTACAATTTTG-AATTGGGTT-CG-
+
+    2461  AGTTTGGGGTCAACTT-TGAACTTAACGAA-TAATTTCGGGTAGT-G-TA
+           |||||||*|| |||| | ||  | || || ||| ||||||||*| | ||
+10740864  -GTTTGGGTTC-ACTTCT-AA--T-AC-AAGTAA-TTCGGGTATTGGTTA
+
+    2507  AAAACCCA-ACATAACCAAAATTA-TTTGGGTTTGAGTACTAACTTA-CA
+          |||||||| ||||||||||||||| |||||||||||||| |*||||| |*
+10740906  AAAACCCATACATAACCAAAATTATTTTGGGTTTGAGTA-TTACTTACCC
+
+    2554  AAACA-T-T-CAATGATA-CCAAACATATATTAAAAGAATCCAT-AAACC
+          ||||| | | ||||*||| ||||||||||||||||| *|||||| |||||
+10740955  AAACATTGTCCAATTATACCCAAACATATATTAAAA-TATCCATAAAACC
+
+    2599  CCAAAGA-CTAAAATTATAAC-AA-TTTTCCTTAAAG-AAATAATATAAA
+          ||||||| ||||||||||||| || |||||||| ||| ||||||||||||
+10741004  CCAAAGATCTAAAATTATAACAAATTTTTCCTT-AAGAAAATAATATAAA
+
+    2645  ACAAGAAGTAAACCTGGTTTTGTGCTTGCTCAGATAACTC-AATCATT-A
+          |||||||||||||||*||||||*|||*|*|| *||||||| ||||||| |
+10741053  ACAAGAAGTAAACCTTGTTTTGAGCTCGTTC-CATAACTCAAATCATTAA
+
+    2693  ACATTGTC-CAAATTCAAGTT
+          ||| *||| ||||||||||||
+10741102  ACA-AGTCACAAATTCAAGTT
+
