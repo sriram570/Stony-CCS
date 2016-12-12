@@ -1,0 +1,47 @@
+    nMatch: 292
+ nMisMatch: 28
+      nIns: 32
+      nDel: 20
+      %sim: 78.4946
+     Score: -1032
+         Query: 7864612/stonyccs/0_532
+        Target: 2
+         Model: a hybrid of global/local non-affine alignment
+     Raw score: -1032
+        Map QV: 254
+  Query strand: 0
+ Target strand: 1
+   QueryRange: 52 -> 404 of 532
+  TargetRange: 10751230 -> 10751570 of 19698289
+      52  TGTTATCGATCAAGGATGTTTGAAAGCTCTTATAAGCT--GAACCACTGG
+          ||||||||||||| ||*|||| |||||||  *|||*||  ||| | ||||
+10751230  TGTTATCGATCAA-GAAGTTT-AAAGCTC--GTAACCTGGGAA-C-CTGG
+
+     100  C--CAAAAAGAGGCTCGACGGT-TCAA-GAAAAGATAGGCGCAT-CATGC
+          |  | |*|*| || |||||**| |||| |||*|||||||| ||| |*|||
+10751274  CTTC-AGATG-GG-TCGACCATGTCAAGGAAGAGATAGGC-CATGCCTGC
+
+     145  AAGCGTCC-ACTGACAA-G-A-GAGGATATATAACCTACGCATGCATTGC
+          || || || *|**|||| | | *|||| *|||*|||| | ||||||||*|
+10751320  AA-CG-CCTTCAAACAAGGAATAAGGA-CTATCACCT-C-CATGCATTTC
+
+     191  TCCGTTTTGACAGATAACTTGGGGCCTCGATCAAGCAGGAAACT-GCAAA
+          ||| ||||||*|| ||||||||||||||*||||||||||||||| |||||
+10751365  TCC-TTTTGAGAG-TAACTTGGGGCCTCTATCAAGCAGGAAACTGGCAAA
+
+     240  GGC-TTTGCACGGTACAAGATACTCACGGGCCTTACTGTAGCATCTGTAA
+          ||| ||||||||||| *||||||||||  *||||*|*||||| |||||||
+10751413  GGCTTTTGCACGGTA-TAGATACTCAC--TCCTTCCCGTAGC-TCTGTAA
+
+     289  AGTCAGCGAGAAAAACATATGCG-TACCACTTATTCCATGACAGATCCCC
+          || | ||*||||||||||||||| |*||||||||||||||||||||||||
+10751459  AG-C-GCAAGAAAAACATATGCGTTCCCACTTATTCCATGACAGATCCCC
+
+     338  AACCGCGC-TGAGCTATGCACCGTTGTGCCAAACGCCAACGT-TGC--C-
+           | ||||| |||||*||*|| ||  ||*|||||  || ||*| |||  | 
+10751507  -A-CGCGCTTGAGCAATCCA-CG--GTTCCAAA--CC-ACCTCTGCTGCA
+
+     383  GCTGCAC-CGGCTTCCAGAAAC
+          ||||||| | ||||||||||||
+10751549  GCTGCACTC-GCTTCCAGAAAC
+

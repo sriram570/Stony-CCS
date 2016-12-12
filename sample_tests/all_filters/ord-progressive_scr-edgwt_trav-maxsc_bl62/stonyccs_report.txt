@@ -1,0 +1,2 @@
+INFO: Adding 3 sequences with id 7864612 for ccs (filtered?=True)
+INFO: Configuration for ccs - Ordering_algo: no_star_progressive, Scoring_function: edge_weight_based_score, Traversal_algo: max_score, Doing Filtering?: True
