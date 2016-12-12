@@ -317,6 +317,16 @@ def parse_opts():
         opts.log_file = os.path.join(os.getcwd(), 'stonyccs_report.txt')
     LOG_FH = open(opts.log_file, 'w')
 
+    message = "Command being run: " + \
+              "python stonyccs.py {0} {1} ".format(opts.input_file, opts.output_file_prefix) + \
+              "--matrix_file {0} ".format(opts.matrix_file) + \
+              "--ordering_algo {0} ".format(MY_ORDERING_ALGO) + \
+              "--scoring_func {0} ".format(MY_SCORING_FUNC) + \
+              "--traversal_algo {0} ".format(MY_TRAVERSAL_ALGO)
+    if not DO_FILTERING:
+        message += "--disable_filters "
+    log_info(message)
+
     return opts
 
 
