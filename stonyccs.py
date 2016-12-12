@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from   consensus import (score_assignment, do_consensus,
+from   consensus import (scoring_function, do_consensus,
                          SCORING_FUNCTIONS, TRAVERSAL_ALGOS)
 from   converter import  reverse_complement
 from   poaligner import  align_sequences, convert_po_msa_to_dag, get_best_score
