@@ -1,0 +1,3 @@
+INFO: Command being run: python stonyccs.py ../../sample_bam.bam consensus --matrix_file ../../blosum62.mat --ordering_algo no_star_iterative --scoring_func pb_like_score --traversal_algo optimal_random 
+INFO: Adding 3 sequences with id 7864612 for ccs (filtered?=True)
+INFO: Configuration for ccs - Ordering_algo: no_star_iterative, Scoring_function: pb_like_score, Traversal_algo: optimal_random, Doing Filtering?: True
