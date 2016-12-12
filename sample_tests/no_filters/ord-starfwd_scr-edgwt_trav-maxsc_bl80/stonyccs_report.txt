@@ -1,0 +1,2 @@
+INFO: Adding 6 sequences with id 7864612 for ccs (filtered?=False)
+INFO: Configuration for ccs - Ordering_algo: star_only_forward, Scoring_function: edge_weight_based_score, Traversal_algo: max_score, Doing Filtering?: False

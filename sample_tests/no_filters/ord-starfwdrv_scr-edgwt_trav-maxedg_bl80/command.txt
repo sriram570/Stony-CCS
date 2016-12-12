@@ -1,0 +1,1 @@
+python ../stonyccs.py --matrix_file=blosum80.mat --scoring_func=edge_weight_based_score --traversal_algo=max_in_edges --disable_filters sample_bam.bam consensus

@@ -1,0 +1,1 @@
+python ../stonyccs.py --ordering_algo=star_only_forward --matrix_file=blosum62.mat --scoring_func=pb_like_score --traversal_algo=max_score --disable_filters sample_bam.bam consensus
