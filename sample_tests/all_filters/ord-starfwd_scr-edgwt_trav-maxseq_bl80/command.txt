@@ -1,0 +1,1 @@
+../../stonyccs.py ../sample_bam.bam ord-starfwd_scr-edgwt_trav-maxseq_bl80/consensus --matrix ../blosum80.mat --ordering_algo star_only_forward --scoring_func edge_weight_based_score --traversal_algo max_sequences
