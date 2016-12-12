@@ -1,0 +1,2 @@
+python ../stonyccs.py --ordering_algo=no_star_progressive --matrix_file=blosum62.mat --scoring_func=edge_weight_based_score --traversal_algo=max_score sample_bam.bam consensus
+
