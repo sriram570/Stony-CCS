@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+"""
+Script to run generate consensus sequences given a set of input reads
+
+Do 'stonycss --help' for detailed information
+"""
 
 from   consensus import (scoring_function, do_consensus,
                          SCORING_FUNCTIONS, TRAVERSAL_ALGOS)
@@ -12,6 +17,16 @@ import sys
 import tempfile
 
 
+PROG_DESC = """
+This is a ccs (consensus calling) tool that, given a set of reads, generates a
+consensus sequence.
+
+It accepts as input a .bam file containing reads & a scoring matrix file and
+it generates consensus sequences for each well among the reads. The .bam file
+has to be in pacbio format. The tool allows configuring various settings as seen
+below.
+"""
+
 # http://stackoverflow.com/questions/24101524/finding-median-of-list-in-python
 def find_median(arr):
     arr = sorted(arr)
@@ -19,7 +34,7 @@ def find_median(arr):
     if len(arr) % 2 == 0:
         return float(arr[left_mid])
     else:
-        return float((arr[left_mid] + arr[left_mid+1]) / 2.0) 
+        return float((arr[left_mid] + arr[left_mid+1]) / 2.0)
 
 
 # Various tweaks and knobs
@@ -104,9 +119,11 @@ def star_algorithm_ordering(sequences, score_matrix_file, only_forward=False):
     """
     Order the sequences using the STAR alogirthm
     
-    If only_forward is 
-    The problem here is we don't know if the strands are in the forward/reverse
-    direction. So, we perform a slight tweak on the original STAR algorithm.
+    If only_forward is True, all sequences are assumed to be in the forward
+    direction. If it is set to False, the algorithm will choose the best among
+    the forward and reverse orientations. The problem here is we don't know if
+    the strands are in the forward/reverse direction. So, we perform a slight
+    tweak on the original STAR algorithm.
 
     For each strand, we take the forward and reverse versions and find the alignment score
     with the forward and reverse versions of all other strands. We then compute the
@@ -248,7 +265,7 @@ def parse_opts():
            MAX_READ_LENGTH, LOG_FH, MY_ORDERING_ALGO, MY_SCORING_FUNC, \
            MY_TRAVERSAL_ALGO, DO_FILTERING
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=PROG_DESC)
 
     parser.add_argument("input_file", help="Input bam file")
     parser.add_argument("output_file_prefix", help="Prefix for output file")
@@ -333,6 +350,8 @@ def parse_opts():
 def main():
     opts = parse_opts()
 
+    print("All logs go to %s..." % LOG_FH.name)
+
     inf = pysam.AlignmentFile(opts.input_file, 'rb', check_sq=False)
     
     seq_data = {}
@@ -353,6 +372,7 @@ def main():
             cur_seq_id = seq_id 
         seqs_well.append(line)
     process_and_filter_seqs(cur_seq_id, seqs_well, seq_data)
+    total_seqs_read = i + 1
 
     # Step 2: Do ccs for chosen wells
     log_info("Configuration for ccs - "
@@ -360,7 +380,9 @@ def main():
              "Doing Filtering?: {3}".format(MY_ORDERING_ALGO, MY_SCORING_FUNC,
                                             MY_TRAVERSAL_ALGO, DO_FILTERING))
     ccs_seqs = {}
+    seqs_used_for_ccs = 0
     for well_id in seq_data:
+        seqs_used_for_ccs += len(seq_data[well_id]['sequences']) 
         ccs_seq = do_stonyccs(well_id, seq_data[well_id]['sequences'], opts.matrix_file)
         ccs_seqs[well_id] = ccs_seq
 
@@ -370,6 +392,12 @@ def main():
         fastaf.write('>' + str(well_id) + '/stonyccs\n')
         fastaf.write(ccs_seqs[well_id] + '\n')
     fastaf.close()
+    log_info("Generated consensus file - %s" % fastaf.name)
+
+    log_info("Read total {0} reads from input file, did ccs on total {1} reads "
+             "({2} separate wells). Used {3:.2f} % of the input reads".format(
+                total_seqs_read, seqs_used_for_ccs, len(seq_data),
+                (seqs_used_for_ccs / float(total_seqs_read))*100.0))
 
     # Close the log file
     LOG_FH.close()

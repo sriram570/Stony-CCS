@@ -15,11 +15,13 @@ def debug(message):
         print('DEBUG:', message)
 
 
-# See if poa is accessible when module loads
-with open(os.devnull, 'w') as dnull:
-    exit_code = subprocess.call('poa', shell=True, stdout=dnull, stderr=dnull)
-    if exit_code == 127:
-        raise EnvironmentError("'poa' not found in PATH. Add it and retry")
+def get_poa_command():
+    """
+    Returns the location of the poa command. It is assumed that it is has been
+    compiled already. 
+    """
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(repo_root, 'external', 'poaV2', 'poa')
 
 
 def _align(input_files_command,
@@ -33,7 +35,7 @@ def _align(input_files_command,
     The common aligner used by other methods. Constructs a command and call's
     the C POA program. 
     """
-    poa_command  = 'poa'
+    poa_command  = get_poa_command()
     poa_command += ' ' + input_files_command
     poa_command += ' ' + score_matrix_file
 
