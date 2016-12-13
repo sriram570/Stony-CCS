@@ -21,14 +21,16 @@ PROG_DESC = """
 This is a ccs (consensus calling) tool that, given a set of reads, generates a
 consensus sequence.
 
-It accepts as input a .bam file containing reads & a scoring matrix file and
-it generates consensus sequences for each well among the reads. The .bam file
-has to be in pacbio format. The tool allows configuring various settings as seen
-below.
+It accepts as input a sorted-by-qname .bam file containing reads & a scoring
+matrix file and it generates consensus sequences for each well among the reads.
+The .bam file has to be in pacbio format. The tool allows configuring various
+settings as seen below.
 """
 
 # http://stackoverflow.com/questions/24101524/finding-median-of-list-in-python
 def find_median(arr):
+    if len(arr) == 1:
+        return float(arr[0])
     arr = sorted(arr)
     left_mid = (len(arr) - 1) / 2
     if len(arr) % 2 == 0:
@@ -44,6 +46,7 @@ MIN_READ_QUALITY  = 0.8
 MIN_SNR           = 3.75
 MIN_READ_LENGTH   = 10
 MAX_READ_LENGTH   = 7000
+MEDIAN_DIFFER_ALLOWANCE = 5.0
 
 DO_FILTERING      = True
 ORDERING_ALGOS    = ["star_only_forward",
@@ -104,11 +107,13 @@ def do_length_filter(seqs_well):
     return [s for s in seqs_well if MIN_READ_LENGTH <= len(s.query) <= MAX_READ_LENGTH]
 
 def do_median_filter(seqs_well):
+    if len(seqs_well) == 0:
+        return seqs_well
     seq_lengths = [len(seq.query) for seq in seqs_well]
     median = find_median(seq_lengths)
     out_seqs_well = []
     for seq, seq_length in zip(seqs_well, seq_lengths):
-        if (seq_length / 2.0) < median < (seq_length * 2.0):
+        if (median / MEDIAN_DIFFER_ALLOWANCE) < seq_length < (median * MEDIAN_DIFFER_ALLOWANCE):
             out_seqs_well.append(seq)
     return out_seqs_well
 
@@ -245,6 +250,7 @@ def do_stonyccs(well_id, seqs, score_matrix_file):
     if MY_ORDERING_ALGO in ('no_star_progressive', 'no_star_alternate_reversed_progressive'):
         do_progressive = True
 
+    log_info("Doing ccs for id %s" % well_id)
     align_sequences(ordered_seqs, score_matrix_file, po_msa_f.name, do_progressive=do_progressive)
     dag = convert_po_msa_to_dag(po_msa_f.name)
     os.unlink(po_msa_f.name)
@@ -262,8 +268,8 @@ def do_stonyccs(well_id, seqs, score_matrix_file):
 
 def parse_opts():
     global MIN_REQUIRED_SEQS, MIN_READ_QUALITY, MIN_SNR, MIN_READ_LENGTH, \
-           MAX_READ_LENGTH, LOG_FH, MY_ORDERING_ALGO, MY_SCORING_FUNC, \
-           MY_TRAVERSAL_ALGO, DO_FILTERING
+           MEDIAN_DIFFER_ALLOWANCE, MAX_READ_LENGTH, LOG_FH, MY_ORDERING_ALGO, \
+           MY_SCORING_FUNC, MY_TRAVERSAL_ALGO, DO_FILTERING
 
     parser = argparse.ArgumentParser(description=PROG_DESC)
 
@@ -283,6 +289,9 @@ def parse_opts():
         help="Min. read length required to do ccs (default %s)" % MIN_READ_LENGTH)
     parser.add_argument("--max_read_length", type=int,
         help="Max. read length limit for ccs (default %s)" % MAX_READ_LENGTH)
+    parser.add_argument("--median_differ_allowance", type=int,
+        help="Only allow reads whose length is greater than median/allowance and less than"
+             "median*allowance (default %s)" % MEDIAN_DIFFER_ALLOWANCE)
 
     parser.add_argument("--disable_filters", action="store_true",
         help="If this flag is set, no filtering will be done (but wells with \n"
@@ -315,6 +324,8 @@ def parse_opts():
         MIN_READ_LENGTH = opts.min_read_length
     if opts.max_read_length:
         MAX_READ_LENGTH = opts.max_read_length
+    if opts.median_differ_allowance:
+        MEDIAN_DIFFER_ALLOWANCE = opts.median_differ_allowance
 
     DO_FILTERING = not(opts.disable_filters)
     if opts.ordering_algo:
@@ -365,14 +376,19 @@ def main():
         seq_id = int(qname.split('/')[1])
         if i == 0:
             cur_seq_id = seq_id
-        if seq_id != cur_seq_id:
+        if seq_id > cur_seq_id:
             # Process previous sequences
             process_and_filter_seqs(cur_seq_id, seqs_well, seq_data)
             seqs_well = []
-            cur_seq_id = seq_id 
+            cur_seq_id = seq_id
+        elif seq_id < cur_seq_id:
+            raise ValueError('This program expects a sorted .bam file')
         seqs_well.append(line)
     process_and_filter_seqs(cur_seq_id, seqs_well, seq_data)
     total_seqs_read = i + 1
+    
+    print("\nRead %s sequences\n" % total_seqs_read)
+    print("Doing ccs for %s wells...\n" % len(seq_data))
 
     # Step 2: Do ccs for chosen wells
     log_info("Configuration for ccs - "
@@ -381,18 +397,19 @@ def main():
                                             MY_TRAVERSAL_ALGO, DO_FILTERING))
     ccs_seqs = {}
     seqs_used_for_ccs = 0
-    for well_id in seq_data:
+    for well_id in sorted(seq_data):
         seqs_used_for_ccs += len(seq_data[well_id]['sequences']) 
         ccs_seq = do_stonyccs(well_id, seq_data[well_id]['sequences'], opts.matrix_file)
         ccs_seqs[well_id] = ccs_seq
 
     # Step 3: Write output to fasta file 
-    fastaf = open(opts.output_file_prefix + '.fa', 'w')
-    for well_id in sorted(ccs_seqs):
-        fastaf.write('>' + str(well_id) + '/stonyccs\n')
-        fastaf.write(ccs_seqs[well_id] + '\n')
-    fastaf.close()
-    log_info("Generated consensus file - %s" % fastaf.name)
+    if seqs_used_for_ccs > 0:
+        fastaf = open(opts.output_file_prefix + '.fa', 'w')
+        for well_id in sorted(ccs_seqs):
+            fastaf.write('>' + str(well_id) + '/stonyccs\n')
+            fastaf.write(ccs_seqs[well_id] + '\n')
+        fastaf.close()
+        log_info("Generated consensus file - %s" % fastaf.name)
 
     log_info("Read total {0} reads from input file, did ccs on total {1} reads "
              "({2} separate wells). Used {3:.2f} % of the input reads".format(

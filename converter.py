@@ -46,7 +46,7 @@ def sam_to_bam(sam_file, bam_file, check_sq=False):
         a.template_length      = seg.template_length
         a.query_qualities      = seg.query_qualities
         a.tags                 = seg.tags
-        outf.write(a)
+        out_f.write(a)
 
     in_f.close()
     out_f.close()
