@@ -1,4 +1,4 @@
-# New README
+# README
 
 How To Run:
 ==========
