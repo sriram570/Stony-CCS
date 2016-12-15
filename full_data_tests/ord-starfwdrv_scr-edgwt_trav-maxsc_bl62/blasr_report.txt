@@ -4,7 +4,7 @@
       nDel: 929
       %sim: 68.1047
      Score: -11539
-         Query: m54113_160914_092411/10289984/stonyccs/0_5885
+         Query: 10289984/stonyccs/0_5885
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -11539
@@ -559,7 +559,7 @@
       nDel: 280
       %sim: 69.4399
      Score: -5653
-         Query: m54113_160914_092411/10289984/stonyccs/0_5885
+         Query: 10289984/stonyccs/0_5885
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5653
@@ -822,7 +822,7 @@
       nDel: 361
       %sim: 90.1307
      Score: -23258
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -23258
@@ -1305,7 +1305,7 @@
       nDel: 38
       %sim: 83.3333
      Score: -1953
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1953
@@ -1368,7 +1368,7 @@
       nDel: 39
       %sim: 83.3622
      Score: -1882
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1882
@@ -1431,7 +1431,7 @@
       nDel: 44
       %sim: 79.7364
      Score: -1758
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1758
@@ -1498,7 +1498,7 @@
       nDel: 26
       %sim: 85.8369
      Score: -1641
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1641
@@ -1553,7 +1553,7 @@
       nDel: 28
       %sim: 83.3333
      Score: -1569
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1569
@@ -1608,7 +1608,7 @@
       nDel: 39
       %sim: 79.4179
      Score: -1379
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1379
@@ -1663,7 +1663,7 @@
       nDel: 12
       %sim: 84.7973
      Score: -1016
-         Query: m54113_160914_092411/10420342/stonyccs/0_5456
+         Query: 10420342/stonyccs/0_5456
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1016
@@ -1702,7 +1702,7 @@
       nDel: 231
       %sim: 85.672
      Score: -21331
-         Query: m54113_160914_092411/12452809/stonyccs/0_5848
+         Query: 12452809/stonyccs/0_5848
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -21331
@@ -2205,7 +2205,7 @@
       nDel: 231
       %sim: 85.3329
      Score: -21069
-         Query: m54113_160914_092411/12452809/stonyccs/0_5848
+         Query: 12452809/stonyccs/0_5848
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -21069
@@ -2708,7 +2708,7 @@
       nDel: 225
       %sim: 85.6355
      Score: -20981
-         Query: m54113_160914_092411/12452809/stonyccs/0_5848
+         Query: 12452809/stonyccs/0_5848
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20981
@@ -3203,7 +3203,7 @@
       nDel: 230
       %sim: 85.1169
      Score: -20978
-         Query: m54113_160914_092411/12452809/stonyccs/0_5848
+         Query: 12452809/stonyccs/0_5848
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20978
@@ -3706,7 +3706,7 @@
       nDel: 227
       %sim: 85.5135
      Score: -20875
-         Query: m54113_160914_092411/12452809/stonyccs/0_5848
+         Query: 12452809/stonyccs/0_5848
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20875
@@ -4201,7 +4201,7 @@
       nDel: 83
       %sim: 87.9407
      Score: -7333
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7333
@@ -4376,7 +4376,7 @@
       nDel: 82
       %sim: 87.9346
      Score: -7324
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7324
@@ -4551,7 +4551,7 @@
       nDel: 84
       %sim: 87.871
      Score: -7307
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7307
@@ -4726,7 +4726,7 @@
       nDel: 85
       %sim: 87.7488
      Score: -7302
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7302
@@ -4901,7 +4901,7 @@
       nDel: 97
       %sim: 87.4428
      Score: -7276
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7276
@@ -5076,7 +5076,7 @@
       nDel: 96
       %sim: 87.3604
      Score: -7272
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7272
@@ -5251,7 +5251,7 @@
       nDel: 85
       %sim: 87.3405
      Score: -7214
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7214
@@ -5426,7 +5426,7 @@
       nDel: 82
       %sim: 86.9632
      Score: -7142
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7142
@@ -5601,7 +5601,7 @@
       nDel: 82
       %sim: 86.1168
      Score: -6954
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -6954
@@ -5776,7 +5776,7 @@
       nDel: 86
       %sim: 85.9184
      Score: -6946
-         Query: m54113_160914_092411/16712233/stonyccs/0_1878
+         Query: 16712233/stonyccs/0_1878
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -6946
@@ -5951,7 +5951,7 @@
       nDel: 250
       %sim: 92.4929
      Score: -20782
-         Query: m54113_160914_092411/18612800/stonyccs/0_4652
+         Query: 18612800/stonyccs/0_4652
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20782
@@ -6362,7 +6362,7 @@
       nDel: 194
       %sim: 83.2395
      Score: -10466
-         Query: m54113_160914_092411/18612800/stonyccs/0_4652
+         Query: 18612800/stonyccs/0_4652
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -10466
@@ -6633,7 +6633,7 @@
       nDel: 172
       %sim: 71.6565
      Score: -4431
-         Query: m54113_160914_092411/19792475/stonyccs/0_4089
+         Query: 19792475/stonyccs/0_4089
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4431
@@ -6820,7 +6820,7 @@
       nDel: 59
       %sim: 74.1936
      Score: -2171
-         Query: m54113_160914_092411/19792475/stonyccs/0_4089
+         Query: 19792475/stonyccs/0_4089
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -2171
@@ -6911,7 +6911,7 @@
       nDel: 59
       %sim: 74.1936
      Score: -2171
-         Query: m54113_160914_092411/19792475/stonyccs/0_4089
+         Query: 19792475/stonyccs/0_4089
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -2171
@@ -7002,7 +7002,7 @@
       nDel: 601
       %sim: 75.4928
      Score: -13083
-         Query: m54113_160914_092411/20972211/stonyccs/0_5947
+         Query: 20972211/stonyccs/0_5947
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -13083
@@ -7441,7 +7441,7 @@
       nDel: 177
       %sim: 76.4171
      Score: -3693
-         Query: m54113_160914_092411/20972211/stonyccs/0_5947
+         Query: 20972211/stonyccs/0_5947
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3693
@@ -7572,7 +7572,7 @@
       nDel: 177
       %sim: 76.4171
      Score: -3693
-         Query: m54113_160914_092411/20972211/stonyccs/0_5947
+         Query: 20972211/stonyccs/0_5947
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3693
@@ -7703,7 +7703,7 @@
       nDel: 86
       %sim: 83.6761
      Score: -10365
-         Query: m54113_160914_092411/23265565/stonyccs/0_3035
+         Query: 23265565/stonyccs/0_3035
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -10365
@@ -7970,7 +7970,7 @@
       nDel: 54
       %sim: 85.3865
      Score: -5802
-         Query: m54113_160914_092411/23855531/stonyccs/0_1727
+         Query: 23855531/stonyccs/0_1727
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5802
@@ -8121,7 +8121,7 @@
       nDel: 3
       %sim: 89.8148
      Score: -425
-         Query: m54113_160914_092411/23855531/stonyccs/0_1727
+         Query: 23855531/stonyccs/0_1727
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -425
@@ -8148,7 +8148,7 @@
       nDel: 384
       %sim: 78.9956
      Score: -14403
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14403
@@ -8567,7 +8567,7 @@
       nDel: 18
       %sim: 82.9787
      Score: -1518
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1518
@@ -8622,7 +8622,7 @@
       nDel: 5
       %sim: 89.2128
      Score: -1325
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1325
@@ -8665,7 +8665,7 @@
       nDel: 5
       %sim: 88.1503
      Score: -1296
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1296
@@ -8708,7 +8708,7 @@
       nDel: 5
       %sim: 89.0909
      Score: -1272
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1272
@@ -8751,7 +8751,7 @@
       nDel: 5
       %sim: 87.0482
      Score: -1218
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1218
@@ -8794,7 +8794,7 @@
       nDel: 6
       %sim: 90.9774
      Score: -1080
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1080
@@ -8833,7 +8833,7 @@
       nDel: 4
       %sim: 81.3218
      Score: -1075
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1075
@@ -8876,7 +8876,7 @@
       nDel: 10
       %sim: 80.5085
      Score: -1052
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1052
@@ -8923,7 +8923,7 @@
       nDel: 7
       %sim: 86.3014
      Score: -1038
-         Query: m54113_160914_092411/23986889/stonyccs/0_4638
+         Query: 23986889/stonyccs/0_4638
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1038
@@ -8962,7 +8962,7 @@
       nDel: 173
       %sim: 79.3065
      Score: -5218
-         Query: m54113_160914_092411/24445639/stonyccs/0_2289
+         Query: 24445639/stonyccs/0_2289
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5218
@@ -9125,7 +9125,7 @@
       nDel: 8
       %sim: 80.7074
      Score: -929
-         Query: m54113_160914_092411/24445639/stonyccs/0_2289
+         Query: 24445639/stonyccs/0_2289
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -929
@@ -9168,7 +9168,7 @@
       nDel: 5
       %sim: 80.198
      Score: -296
-         Query: m54113_160914_092411/24445639/stonyccs/0_2289
+         Query: 24445639/stonyccs/0_2289
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -296
@@ -9195,7 +9195,7 @@
       nDel: 113
       %sim: 86.5697
      Score: -14627
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14627
@@ -9538,7 +9538,7 @@
       nDel: 123
       %sim: 86.4061
      Score: -14587
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14587
@@ -9881,7 +9881,7 @@
       nDel: 117
       %sim: 86.3122
      Score: -14536
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14536
@@ -10224,7 +10224,7 @@
       nDel: 119
       %sim: 86.2205
      Score: -14503
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14503
@@ -10567,7 +10567,7 @@
       nDel: 117
       %sim: 85.7706
      Score: -14309
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14309
@@ -10910,7 +10910,7 @@
       nDel: 118
       %sim: 86.1381
      Score: -14279
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14279
@@ -11249,7 +11249,7 @@
       nDel: 118
       %sim: 85.6264
      Score: -14265
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14265
@@ -11592,7 +11592,7 @@
       nDel: 123
       %sim: 85.4966
      Score: -14230
-         Query: m54113_160914_092411/24576586/stonyccs/0_3954
+         Query: 24576586/stonyccs/0_3954
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14230
@@ -11935,7 +11935,7 @@
       nDel: 3
       %sim: 91.3793
      Score: -239
-         Query: m54113_160914_092411/24838650/stonyccs/0_844
+         Query: 24838650/stonyccs/0_844
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -239
@@ -11958,7 +11958,7 @@
       nDel: 122
       %sim: 78.1622
      Score: -5042
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5042
@@ -12121,7 +12121,7 @@
       nDel: 124
       %sim: 76.2076
      Score: -4907
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4907
@@ -12292,7 +12292,7 @@
       nDel: 112
       %sim: 78.7356
      Score: -4847
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4847
@@ -12447,7 +12447,7 @@
       nDel: 126
       %sim: 76.699
      Score: -4773
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4773
@@ -12614,7 +12614,7 @@
       nDel: 115
       %sim: 76.7227
      Score: -4753
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4753
@@ -12777,7 +12777,7 @@
       nDel: 119
       %sim: 78.1755
      Score: -4737
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4737
@@ -12932,7 +12932,7 @@
       nDel: 113
       %sim: 76.3031
      Score: -4735
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4735
@@ -13099,7 +13099,7 @@
       nDel: 115
       %sim: 77.9514
      Score: -4677
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4677
@@ -13254,7 +13254,7 @@
       nDel: 107
       %sim: 75.8797
      Score: -3906
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3906
@@ -13397,7 +13397,7 @@
       nDel: 70
       %sim: 78.4658
      Score: -2988
-         Query: m54113_160914_092411/24904429/stonyccs/0_3571
+         Query: 24904429/stonyccs/0_3571
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -2988
@@ -13500,7 +13500,7 @@
       nDel: 190
       %sim: 89.5197
      Score: -22488
-         Query: m54113_160914_092411/26214814/stonyccs/0_5536
+         Query: 26214814/stonyccs/0_5536
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -22488
@@ -13975,7 +13975,7 @@
       nDel: 197
       %sim: 89.4452
      Score: -22476
-         Query: m54113_160914_092411/26214814/stonyccs/0_5536
+         Query: 26214814/stonyccs/0_5536
         Target: Mt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -22476
@@ -14450,7 +14450,7 @@
       nDel: 736
       %sim: 75.4086
      Score: -12823
-         Query: m54113_160914_092411/26608528/stonyccs/0_4405
+         Query: 26608528/stonyccs/0_4405
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -12823
@@ -14877,7 +14877,7 @@
       nDel: 341
       %sim: 88.635
      Score: -19191
-         Query: m54113_160914_092411/27263274/stonyccs/0_4656
+         Query: 27263274/stonyccs/0_4656
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -19191
@@ -15292,7 +15292,7 @@
       nDel: 155
       %sim: 81.9531
      Score: -12093
-         Query: m54113_160914_092411/28771072/stonyccs/0_4082
+         Query: 28771072/stonyccs/0_4082
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -12093
@@ -15615,7 +15615,7 @@
       nDel: 21
       %sim: 77.8013
      Score: -1282
-         Query: m54113_160914_092411/28771072/stonyccs/0_4082
+         Query: 28771072/stonyccs/0_4082
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1282
@@ -15670,7 +15670,7 @@
       nDel: 236
       %sim: 90.8441
      Score: -22742
-         Query: m54113_160914_092411/29688002/stonyccs/0_5359
+         Query: 29688002/stonyccs/0_5359
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -22742
@@ -16133,7 +16133,7 @@
       nDel: 236
       %sim: 90.8441
      Score: -22742
-         Query: m54113_160914_092411/29688002/stonyccs/0_5359
+         Query: 29688002/stonyccs/0_5359
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -22742
@@ -16596,7 +16596,7 @@
       nDel: 27
       %sim: 90.8738
      Score: -2097
-         Query: m54113_160914_092411/29688002/stonyccs/0_5359
+         Query: 29688002/stonyccs/0_5359
         Target: Mt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -2097
@@ -16655,7 +16655,7 @@
       nDel: 275
       %sim: 83.769
      Score: -20613
-         Query: m54113_160914_092411/30540436/stonyccs/0_5933
+         Query: 30540436/stonyccs/0_5933
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20613
@@ -17166,7 +17166,7 @@
       nDel: 294
       %sim: 83.502
      Score: -20544
-         Query: m54113_160914_092411/30540436/stonyccs/0_5933
+         Query: 30540436/stonyccs/0_5933
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20544
@@ -17681,7 +17681,7 @@
       nDel: 272
       %sim: 83.5725
      Score: -20517
-         Query: m54113_160914_092411/30540436/stonyccs/0_5933
+         Query: 30540436/stonyccs/0_5933
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20517
@@ -18196,7 +18196,7 @@
       nDel: 297
       %sim: 83.2209
      Score: -20379
-         Query: m54113_160914_092411/30540436/stonyccs/0_5933
+         Query: 30540436/stonyccs/0_5933
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20379
@@ -18711,7 +18711,7 @@
       nDel: 337
       %sim: 81.7688
      Score: -19590
-         Query: m54113_160914_092411/30540436/stonyccs/0_5933
+         Query: 30540436/stonyccs/0_5933
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -19590
@@ -19230,7 +19230,7 @@
       nDel: 282
       %sim: 79.1518
      Score: -8023
-         Query: m54113_160914_092411/30606281/stonyccs/0_2542
+         Query: 30606281/stonyccs/0_2542
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8023
@@ -19473,7 +19473,7 @@
       nDel: 377
       %sim: 86.3328
      Score: -27562
-         Query: m54113_160914_092411/30671334/stonyccs/0_7387
+         Query: 30671334/stonyccs/0_7387
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -27562
@@ -20104,7 +20104,7 @@
       nDel: 530
       %sim: 68.9992
      Score: -4593
-         Query: m54113_160914_092411/31261374/stonyccs/0_3102
+         Query: 31261374/stonyccs/0_3102
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4593
@@ -20319,7 +20319,7 @@
       nDel: 47
       %sim: 67.6692
      Score: -443
-         Query: m54113_160914_092411/31261374/stonyccs/0_3102
+         Query: 31261374/stonyccs/0_3102
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -443
@@ -20358,7 +20358,7 @@
       nDel: 11
       %sim: 75.4902
      Score: -251
-         Query: m54113_160914_092411/31261374/stonyccs/0_3102
+         Query: 31261374/stonyccs/0_3102
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -251
@@ -20385,7 +20385,7 @@
       nDel: 129
       %sim: 88.8419
      Score: -7287
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7287
@@ -20552,7 +20552,7 @@
       nDel: 129
       %sim: 88.7361
      Score: -7266
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7266
@@ -20719,7 +20719,7 @@
       nDel: 131
       %sim: 88.3254
      Score: -7191
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7191
@@ -20886,7 +20886,7 @@
       nDel: 128
       %sim: 85.9211
      Score: -7135
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7135
@@ -21065,7 +21065,7 @@
       nDel: 131
       %sim: 85.7428
      Score: -7111
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7111
@@ -21244,7 +21244,7 @@
       nDel: 129
       %sim: 85.6786
      Score: -7087
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7087
@@ -21423,7 +21423,7 @@
       nDel: 141
       %sim: 85.119
      Score: -7015
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7015
@@ -21602,7 +21602,7 @@
       nDel: 139
       %sim: 85.1043
      Score: -7006
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7006
@@ -21781,7 +21781,7 @@
       nDel: 123
       %sim: 84.985
      Score: -6928
-         Query: m54113_160914_092411/33620609/stonyccs/0_1910
+         Query: 33620609/stonyccs/0_1910
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -6928
@@ -21956,7 +21956,7 @@
       nDel: 1415
       %sim: 66.6828
      Score: -10025
-         Query: m54113_160914_092411/34799710/stonyccs/0_4766
+         Query: 34799710/stonyccs/0_4766
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -10025
@@ -22467,7 +22467,7 @@
       nDel: 763
       %sim: 71.1212
      Score: -12888
-         Query: m54113_160914_092411/35718139/stonyccs/0_5919
+         Query: 35718139/stonyccs/0_5919
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -12888
@@ -22994,7 +22994,7 @@
       nDel: 120
       %sim: 65.9586
      Score: -5678
-         Query: m54113_160914_092411/36111012/stonyccs/0_3621
+         Query: 36111012/stonyccs/0_3621
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5678
@@ -23305,7 +23305,7 @@
       nDel: 176
       %sim: 91.6003
      Score: -11449
-         Query: m54113_160914_092411/37552758/stonyccs/0_2598
+         Query: 37552758/stonyccs/0_2598
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -11449
@@ -23544,7 +23544,7 @@
       nDel: 0
       %sim: 100
      Score: -260
-         Query: m54113_160914_092411/37552758/stonyccs/0_2598
+         Query: 37552758/stonyccs/0_2598
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -260
@@ -23567,7 +23567,7 @@
       nDel: 438
       %sim: 77.8769
      Score: -12921
-         Query: m54113_160914_092411/40632549/stonyccs/0_5596
+         Query: 40632549/stonyccs/0_5596
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -12921
@@ -23962,7 +23962,7 @@
       nDel: 623
       %sim: 72.3214
      Score: -8018
-         Query: m54113_160914_092411/43844323/stonyccs/0_3074
+         Query: 43844323/stonyccs/0_3074
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8018
@@ -24273,7 +24273,7 @@
       nDel: 247
       %sim: 68.914
      Score: -8024
-         Query: m54113_160914_092411/46072469/stonyccs/0_5323
+         Query: 46072469/stonyccs/0_5323
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8024
@@ -24644,7 +24644,7 @@
       nDel: 9
       %sim: 73.2759
      Score: -260
-         Query: m54113_160914_092411/46072469/stonyccs/0_5323
+         Query: 46072469/stonyccs/0_5323
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -260
@@ -24671,7 +24671,7 @@
       nDel: 126
       %sim: 75.7841
      Score: -3456
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3456
@@ -24798,7 +24798,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24821,7 +24821,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24844,7 +24844,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24867,7 +24867,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24890,7 +24890,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24913,7 +24913,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24936,7 +24936,7 @@
       nDel: 0
       %sim: 91.8919
      Score: -309
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -309
@@ -24959,7 +24959,7 @@
       nDel: 0
       %sim: 92.4528
      Score: -224
-         Query: m54113_160914_092411/48628530/stonyccs/0_1253
+         Query: 48628530/stonyccs/0_1253
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -224
@@ -24982,7 +24982,7 @@
       nDel: 149
       %sim: 86.6835
      Score: -14395
-         Query: m54113_160914_092411/48693832/stonyccs/0_4337
+         Query: 48693832/stonyccs/0_4337
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -14395
@@ -25317,7 +25317,7 @@
       nDel: 168
       %sim: 72.4905
      Score: -3955
-         Query: m54113_160914_092411/48693832/stonyccs/0_4337
+         Query: 48693832/stonyccs/0_4337
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3955
@@ -25480,7 +25480,7 @@
       nDel: 23
       %sim: 85.8491
      Score: -1876
-         Query: m54113_160914_092411/48693832/stonyccs/0_4337
+         Query: 48693832/stonyccs/0_4337
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1876
@@ -25539,7 +25539,7 @@
       nDel: 278
       %sim: 81.5807
      Score: -18250
-         Query: m54113_160914_092411/50201048/stonyccs/0_6413
+         Query: 50201048/stonyccs/0_6413
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -18250
@@ -26026,7 +26026,7 @@
       nDel: 286
       %sim: 88.8107
      Score: -17006
-         Query: m54113_160914_092411/50463430/stonyccs/0_4136
+         Query: 50463430/stonyccs/0_4136
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -17006
@@ -26397,7 +26397,7 @@
       nDel: 6
       %sim: 89.0625
      Score: -737
-         Query: m54113_160914_092411/50463430/stonyccs/0_4136
+         Query: 50463430/stonyccs/0_4136
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -737
@@ -26428,7 +26428,7 @@
       nDel: 5
       %sim: 93.4783
      Score: -399
-         Query: m54113_160914_092411/50463430/stonyccs/0_4136
+         Query: 50463430/stonyccs/0_4136
         Target: Mt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -399
@@ -26451,7 +26451,7 @@
       nDel: 5
       %sim: 93.4783
      Score: -399
-         Query: m54113_160914_092411/50463430/stonyccs/0_4136
+         Query: 50463430/stonyccs/0_4136
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -399
@@ -26474,7 +26474,7 @@
       nDel: 579
       %sim: 71.2737
      Score: -9664
-         Query: m54113_160914_092411/51904781/stonyccs/0_4132
+         Query: 51904781/stonyccs/0_4132
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -9664
@@ -26869,7 +26869,7 @@
       nDel: 281
       %sim: 77.5667
      Score: -18327
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -18327
@@ -27428,7 +27428,7 @@
       nDel: 50
       %sim: 73.6264
      Score: -1860
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1860
@@ -27511,7 +27511,7 @@
       nDel: 55
       %sim: 72.5674
      Score: -1848
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1848
@@ -27598,7 +27598,7 @@
       nDel: 57
       %sim: 72.2807
      Score: -1826
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1826
@@ -27685,7 +27685,7 @@
       nDel: 56
       %sim: 72.2482
      Score: -1819
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1819
@@ -27772,7 +27772,7 @@
       nDel: 51
       %sim: 73.2984
      Score: -1714
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1714
@@ -27851,7 +27851,7 @@
       nDel: 39
       %sim: 70.4208
      Score: -1585
-         Query: m54113_160914_092411/53936725/stonyccs/0_6514
+         Query: 53936725/stonyccs/0_6514
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1585
@@ -27934,7 +27934,7 @@
       nDel: 343
       %sim: 79.1054
      Score: -18270
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -18270
@@ -28461,7 +28461,7 @@
       nDel: 47
       %sim: 75.4045
      Score: -1518
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1518
@@ -28528,7 +28528,7 @@
       nDel: 33
       %sim: 75.626
      Score: -1479
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1479
@@ -28591,7 +28591,7 @@
       nDel: 69
       %sim: 71.8841
      Score: -1439
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1439
@@ -28662,7 +28662,7 @@
       nDel: 45
       %sim: 74.7126
      Score: -1242
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1242
@@ -28721,7 +28721,7 @@
       nDel: 40
       %sim: 74.7826
      Score: -1103
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1103
@@ -28776,7 +28776,7 @@
       nDel: 66
       %sim: 68.6885
      Score: -1085
-         Query: m54113_160914_092411/54198504/stonyccs/0_6061
+         Query: 54198504/stonyccs/0_6061
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1085
@@ -28843,7 +28843,7 @@
       nDel: 165
       %sim: 71.1146
      Score: -5120
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5120
@@ -29062,7 +29062,7 @@
       nDel: 5
       %sim: 88
      Score: -375
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -375
@@ -29085,7 +29085,7 @@
       nDel: 5
       %sim: 88
      Score: -375
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -375
@@ -29108,7 +29108,7 @@
       nDel: 5
       %sim: 88
      Score: -375
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -375
@@ -29131,7 +29131,7 @@
       nDel: 5
       %sim: 88
      Score: -375
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -375
@@ -29154,7 +29154,7 @@
       nDel: 5
       %sim: 87
      Score: -364
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -364
@@ -29177,7 +29177,7 @@
       nDel: 5
       %sim: 86.8687
      Score: -359
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -359
@@ -29200,7 +29200,7 @@
       nDel: 2
       %sim: 93.6508
      Score: -274
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -274
@@ -29223,7 +29223,7 @@
       nDel: 2
       %sim: 93.6508
      Score: -274
-         Query: m54113_160914_092411/56689088/stonyccs/0_3998
+         Query: 56689088/stonyccs/0_3998
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -274
@@ -29246,7 +29246,7 @@
       nDel: 111
       %sim: 91.9048
      Score: -15801
-         Query: m54113_160914_092411/56951192/stonyccs/0_3673
+         Query: 56951192/stonyccs/0_3673
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -15801
@@ -29565,7 +29565,7 @@
       nDel: 140
       %sim: 68.2179
      Score: -1518
-         Query: m54113_160914_092411/56951192/stonyccs/0_3673
+         Query: 56951192/stonyccs/0_3673
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1518
@@ -29652,7 +29652,7 @@
       nDel: 14
       %sim: 81.6456
      Score: -979
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -979
@@ -29695,7 +29695,7 @@
       nDel: 14
       %sim: 79.1798
      Score: -906
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -906
@@ -29738,7 +29738,7 @@
       nDel: 14
       %sim: 78.5489
      Score: -884
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -884
@@ -29781,7 +29781,7 @@
       nDel: 11
       %sim: 78.7671
      Score: -812
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -812
@@ -29820,7 +29820,7 @@
       nDel: 16
       %sim: 84.689
      Score: -710
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -710
@@ -29855,7 +29855,7 @@
       nDel: 2
       %sim: 83.2117
      Score: -452
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -452
@@ -29882,7 +29882,7 @@
       nDel: 2
       %sim: 87.2881
      Score: -436
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -436
@@ -29909,7 +29909,7 @@
       nDel: 3
       %sim: 84.6774
      Score: -423
-         Query: m54113_160914_092411/57279030/stonyccs/0_851
+         Query: 57279030/stonyccs/0_851
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -423
@@ -29936,7 +29936,7 @@
       nDel: 139
       %sim: 90.1742
      Score: -17898
-         Query: m54113_160914_092411/57868524/stonyccs/0_4340
+         Query: 57868524/stonyccs/0_4340
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -17898
@@ -30311,7 +30311,7 @@
       nDel: 81
       %sim: 76.6527
      Score: -3076
-         Query: m54113_160914_092411/57868524/stonyccs/0_4340
+         Query: 57868524/stonyccs/0_4340
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3076
@@ -30422,7 +30422,7 @@
       nDel: 373
       %sim: 88.8483
      Score: -25315
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -25315
@@ -30965,7 +30965,7 @@
       nDel: 154
       %sim: 85.4396
      Score: -8867
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8867
@@ -31184,7 +31184,7 @@
       nDel: 159
       %sim: 85.0372
      Score: -8777
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8777
@@ -31407,7 +31407,7 @@
       nDel: 157
       %sim: 84.9745
      Score: -8739
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8739
@@ -31626,7 +31626,7 @@
       nDel: 147
       %sim: 82.5659
      Score: -8135
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8135
@@ -31845,7 +31845,7 @@
       nDel: 169
       %sim: 82.5662
      Score: -7810
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -7810
@@ -32060,7 +32060,7 @@
       nDel: 82
       %sim: 86.506
      Score: -5956
-         Query: m54113_160914_092411/59900783/stonyccs/0_6204
+         Query: 59900783/stonyccs/0_6204
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -5956
@@ -32211,7 +32211,7 @@
       nDel: 614
       %sim: 81.2794
      Score: -20306
-         Query: m54113_160914_092411/60162663/stonyccs/0_5970
+         Query: 60162663/stonyccs/0_5970
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -20306
@@ -32754,7 +32754,7 @@
       nDel: 72
       %sim: 73.4345
      Score: -3630
-         Query: m54113_160914_092411/60424684/stonyccs/0_2140
+         Query: 60424684/stonyccs/0_2140
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3630
@@ -32897,7 +32897,7 @@
       nDel: 30
       %sim: 79.9465
      Score: -1107
-         Query: m54113_160914_092411/60424684/stonyccs/0_2140
+         Query: 60424684/stonyccs/0_2140
         Target: 3
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1107
@@ -32944,7 +32944,7 @@
       nDel: 3
       %sim: 87.5
      Score: -265
-         Query: m54113_160914_092411/60424684/stonyccs/0_2140
+         Query: 60424684/stonyccs/0_2140
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -265
@@ -32967,7 +32967,7 @@
       nDel: 60
       %sim: 77.2614
      Score: -3177
-         Query: m54113_160914_092411/60620873/stonyccs/0_4214
+         Query: 60620873/stonyccs/0_4214
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3177
@@ -33082,7 +33082,7 @@
       nDel: 229
       %sim: 77.2265
      Score: -8944
-         Query: m54113_160914_092411/61080132/stonyccs/0_3118
+         Query: 61080132/stonyccs/0_3118
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8944
@@ -33365,7 +33365,7 @@
       nDel: 200
       %sim: 66.6009
      Score: -3181
-         Query: m54113_160914_092411/61080132/stonyccs/0_3118
+         Query: 61080132/stonyccs/0_3118
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3181
@@ -33544,7 +33544,7 @@
       nDel: 291
       %sim: 80.984
      Score: -13307
-         Query: m54113_160914_092411/62914913/stonyccs/0_4096
+         Query: 62914913/stonyccs/0_4096
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -13307
@@ -33911,7 +33911,7 @@
       nDel: 478
       %sim: 78.5289
      Score: -13656
-         Query: m54113_160914_092411/65340091/stonyccs/0_4392
+         Query: 65340091/stonyccs/0_4392
         Target: Mt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -13656
@@ -34318,7 +34318,7 @@
       nDel: 41
       %sim: 84.2004
      Score: -1753
-         Query: m54113_160914_092411/65340091/stonyccs/0_4392
+         Query: 65340091/stonyccs/0_4392
         Target: Mt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1753
@@ -34377,7 +34377,7 @@
       nDel: 6
       %sim: 89.2086
      Score: -541
-         Query: m54113_160914_092411/65340091/stonyccs/0_4392
+         Query: 65340091/stonyccs/0_4392
         Target: Pt
          Model: a hybrid of global/local non-affine alignment
      Raw score: -541
@@ -34404,7 +34404,7 @@
       nDel: 127
       %sim: 75.7282
      Score: -4625
-         Query: m54113_160914_092411/65471452/stonyccs/0_4496
+         Query: 65471452/stonyccs/0_4496
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -4625
@@ -34571,7 +34571,7 @@
       nDel: 30
       %sim: 87.007
      Score: -3159
-         Query: m54113_160914_092411/65471452/stonyccs/0_4496
+         Query: 65471452/stonyccs/0_4496
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -3159
@@ -34658,7 +34658,7 @@
       nDel: 204
       %sim: 89.8798
      Score: -11907
-         Query: m54113_160914_092411/65536136/stonyccs/0_2816
+         Query: 65536136/stonyccs/0_2816
         Target: 1
          Model: a hybrid of global/local non-affine alignment
      Raw score: -11907
@@ -34913,7 +34913,7 @@
       nDel: 226
       %sim: 75.1489
      Score: -8621
-         Query: m54113_160914_092411/66650435/stonyccs/0_3373
+         Query: 66650435/stonyccs/0_3373
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -8621
@@ -35212,7 +35212,7 @@
       nDel: 24
       %sim: 70.0483
      Score: -1171
-         Query: m54113_160914_092411/66650435/stonyccs/0_3373
+         Query: 66650435/stonyccs/0_3373
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -1171
@@ -35279,7 +35279,7 @@
       nDel: 4
       %sim: 90.4494
      Score: -714
-         Query: m54113_160914_092411/70386582/stonyccs/0_1160
+         Query: 70386582/stonyccs/0_1160
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -714
@@ -35310,7 +35310,7 @@
       nDel: 80
       %sim: 84.1831
      Score: -6487
-         Query: m54113_160914_092411/72418124/stonyccs/0_2269
+         Query: 72418124/stonyccs/0_2269
         Target: 5
          Model: a hybrid of global/local non-affine alignment
      Raw score: -6487
@@ -35481,7 +35481,7 @@
       nDel: 650
       %sim: 74.0856
      Score: -12032
-         Query: m54113_160914_092411/72549166/stonyccs/0_5341
+         Query: 72549166/stonyccs/0_5341
         Target: 2
          Model: a hybrid of global/local non-affine alignment
      Raw score: -12032
@@ -35908,7 +35908,7 @@
       nDel: 450
       %sim: 79.2154
      Score: -18062
-         Query: m54113_160914_092411/74383589/stonyccs/0_5873
+         Query: 74383589/stonyccs/0_5873
         Target: 4
          Model: a hybrid of global/local non-affine alignment
      Raw score: -18062
