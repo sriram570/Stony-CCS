@@ -1,0 +1,126 @@
+INFO: Command being run: python stonyccs.py /home/ssriram570/Desktop/sorted_c0.bam consensus --matrix_file blosum62.mat --ordering_algo no_star_alternate_reversed_progressive --scoring_func edge_weight_based_score --traversal_algo max_in_edges 
+INFO: Adding 3 sequences with id 10289984 for ccs (filtered?=True)
+INFO: Adding 5 sequences with id 10420342 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 12452809 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 16712233 for ccs (filtered?=True)
+INFO: Adding 5 sequences with id 18612800 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 19792475 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 20972211 for ccs (filtered?=True)
+INFO: Adding 8 sequences with id 21954856 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 23265565 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 23855531 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 23986889 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 24445639 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 24576586 for ccs (filtered?=True)
+INFO: Adding 35 sequences with id 24838650 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 24904429 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 26214814 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 26608528 for ccs (filtered?=True)
+INFO: Adding 4 sequences with id 27263274 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 28771072 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 29688002 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 30540436 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 30606281 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 30671334 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 31261374 for ccs (filtered?=True)
+INFO: Adding 4 sequences with id 33620609 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 34799710 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 35718139 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 36111012 for ccs (filtered?=True)
+INFO: Adding 6 sequences with id 36176659 for ccs (filtered?=True)
+INFO: Adding 9 sequences with id 37552758 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 40632549 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 43844323 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 46072469 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 48628530 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 48693832 for ccs (filtered?=True)
+INFO: Adding 18 sequences with id 49939120 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 50201048 for ccs (filtered?=True)
+INFO: Adding 4 sequences with id 50463430 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 51904781 for ccs (filtered?=True)
+INFO: Adding 6 sequences with id 52626087 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 53936725 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 54198504 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 56689088 for ccs (filtered?=True)
+INFO: Adding 5 sequences with id 56951192 for ccs (filtered?=True)
+INFO: Adding 11 sequences with id 57279030 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 57868524 for ccs (filtered?=True)
+INFO: Adding 6 sequences with id 59900783 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 60162663 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 60424684 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 60620873 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 61080132 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 62129132 for ccs (filtered?=True)
+INFO: Adding 4 sequences with id 62914913 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 65340091 for ccs (filtered?=True)
+INFO: Adding 4 sequences with id 65471452 for ccs (filtered?=True)
+INFO: Adding 7 sequences with id 65536136 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 66650435 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 70386582 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 72418124 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 72549166 for ccs (filtered?=True)
+INFO: Adding 3 sequences with id 74383589 for ccs (filtered?=True)
+INFO: Configuration for ccs - Ordering_algo: no_star_alternate_reversed_progressive, Scoring_function: edge_weight_based_score, Traversal_algo: max_in_edges, Doing Filtering?: True
+INFO: Doing ccs for id 10289984
+INFO: Doing ccs for id 10420342
+INFO: Doing ccs for id 12452809
+INFO: Doing ccs for id 16712233
+INFO: Doing ccs for id 18612800
+INFO: Doing ccs for id 19792475
+INFO: Doing ccs for id 20972211
+INFO: Doing ccs for id 21954856
+INFO: Doing ccs for id 23265565
+INFO: Doing ccs for id 23855531
+INFO: Doing ccs for id 23986889
+INFO: Doing ccs for id 24445639
+INFO: Doing ccs for id 24576586
+INFO: Doing ccs for id 24838650
+INFO: Doing ccs for id 24904429
+INFO: Doing ccs for id 26214814
+INFO: Doing ccs for id 26608528
+INFO: Doing ccs for id 27263274
+INFO: Doing ccs for id 28771072
+INFO: Doing ccs for id 29688002
+INFO: Doing ccs for id 30540436
+INFO: Doing ccs for id 30606281
+INFO: Doing ccs for id 30671334
+INFO: Doing ccs for id 31261374
+INFO: Doing ccs for id 33620609
+INFO: Doing ccs for id 34799710
+INFO: Doing ccs for id 35718139
+INFO: Doing ccs for id 36111012
+INFO: Doing ccs for id 36176659
+INFO: Doing ccs for id 37552758
+INFO: Doing ccs for id 40632549
+INFO: Doing ccs for id 43844323
+INFO: Doing ccs for id 46072469
+INFO: Doing ccs for id 48628530
+INFO: Doing ccs for id 48693832
+INFO: Doing ccs for id 49939120
+INFO: Doing ccs for id 50201048
+INFO: Doing ccs for id 50463430
+INFO: Doing ccs for id 51904781
+INFO: Doing ccs for id 52626087
+INFO: Doing ccs for id 53936725
+INFO: Doing ccs for id 54198504
+INFO: Doing ccs for id 56689088
+INFO: Doing ccs for id 56951192
+INFO: Doing ccs for id 57279030
+INFO: Doing ccs for id 57868524
+INFO: Doing ccs for id 59900783
+INFO: Doing ccs for id 60162663
+INFO: Doing ccs for id 60424684
+INFO: Doing ccs for id 60620873
+INFO: Doing ccs for id 61080132
+INFO: Doing ccs for id 62129132
+INFO: Doing ccs for id 62914913
+INFO: Doing ccs for id 65340091
+INFO: Doing ccs for id 65471452
+INFO: Doing ccs for id 65536136
+INFO: Doing ccs for id 66650435
+INFO: Doing ccs for id 70386582
+INFO: Doing ccs for id 72418124
+INFO: Doing ccs for id 72549166
+INFO: Doing ccs for id 74383589
+INFO: Generated consensus file - consensus.fa
+INFO: Read total 573889 reads from input file, did ccs on total 273 reads (61 separate wells). Used 0.05 % of the input reads
