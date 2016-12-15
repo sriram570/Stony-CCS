@@ -72,7 +72,9 @@ NOTE: One can use this sample bam file to perform quick tests on the stonyccs to
    best-performing configurations from the above sample well tests and ran tests
    for those configurations on this full dataset. All results are filed under
    full_data_tests. The test case details are saved in a manner similar to the
-   above sample well cases.
+   above sample well cases. Additionally, there is a scores.txt file in each test case
+   directory, that contains the list of all match,mismatch,ins,del,sim scores for all
+   consensus strings and the average values for each field.
 
 For both cases, the scores and alignment details for Pacbio's original ccs
 tool have been included under the baseline directory.
