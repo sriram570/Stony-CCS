@@ -25,6 +25,11 @@ It accepts as input a sorted-by-qname .bam file containing reads & a scoring
 matrix file and it generates consensus sequences for each well among the reads.
 The .bam file has to be in pacbio format. The tool allows configuring various
 settings as seen below.
+
+The mandatory paramaters are an input file, an output file prefix and a scoring
+matrix. The other important parameters are --ordering_algo, --scoring_func and
+--traversal_algo (all of them will have some default). The rest of the options
+are for really fine tuning of the ccs run.
 """
 
 # http://stackoverflow.com/questions/24101524/finding-median-of-list-in-python
@@ -202,7 +207,7 @@ def star_algorithm_ordering(sequences, score_matrix_file, only_forward=False):
 def process_and_filter_seqs(cur_seq_id, seqs_well, seq_data):
     # Rejection checks - 
     # (We check this later on as well but we have a lot of single-read wells
-    #  and we want to reject them early for efficiency)
+    #  and we want to reject them early on for efficiency)
     if not enough_required_sequences(seqs_well):
         return
 
@@ -290,7 +295,7 @@ def parse_opts():
     parser.add_argument("--max_read_length", type=int,
         help="Max. read length limit for ccs (default %s)" % MAX_READ_LENGTH)
     parser.add_argument("--median_differ_allowance", type=int,
-        help="Only allow reads whose length is greater than median/allowance and less than"
+        help="Only allow reads whose length is greater than median/allowance and lesser than "
              "median*allowance (default %s)" % MEDIAN_DIFFER_ALLOWANCE)
 
     parser.add_argument("--disable_filters", action="store_true",
