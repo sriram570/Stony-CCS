@@ -3,7 +3,7 @@
 Create and work with POAGraphs
 
 Note: This module is currently not being used by anything. It exists for
-supporting possible future gaph implementations of a POA
+supporting possible future graph implementations of a POA
 
 >>> p = POAGraph()
 >>> v1 = p.add_vertex('A')

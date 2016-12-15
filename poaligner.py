@@ -17,7 +17,7 @@ def debug(message):
 
 def get_poa_command():
     """
-    Returns the location of the poa command. It is assumed that it is has been
+    Returns the location of the poa command. It is assumed that it has been
     compiled already. 
     """
     repo_root = os.path.dirname(os.path.abspath(__file__))
