@@ -3,6 +3,8 @@
 This is a consensus calling tool created as part of the CSE 549 - Computational Biology final project at 
 Stony Brook University. It aims to improve the consensus calling methods used to call Pacbio long reads.
 
+(An included report.pdf file details the methods attempted and results observed)
+
 Contributors:
 
 1) Swaminathan Sivaraman
@@ -39,12 +41,12 @@ How To Run:
 
 Tests:
 =====
-We have performed tests ont the new stonyccs tool and compared it with pacbio's
-ccs(baseline) results. There are two tests run:
+We have performed tests on the new stonyccs tool and compared it with pacbio's
+ccs(baseline) results. There are two kind of tests run:
 
 1) Sample well tests:
 
-   Here, we took a single well of reads (total 6) and ran extensive tests using
+   Here, we took a single well of reads (total 6 reads) and ran extensive tests using
    various combinations of stonyccs' algorithms. We mostly used blosum62 and
    sometimes blosum80 as the scoring matrices. All test results are present in
    the sample_tests directory. The bam file used is named as sample_bam.bam. Each
@@ -54,6 +56,8 @@ ccs(baseline) results. There are two tests run:
    configuration used respectively. Most of the testcases are in the
    sample_tests/all_filters directory.
 
+NOTE: One can use this sample bam file to perform quick tests on the stonyccs tool.
+
 2) Full data tests:
 
    Here, we sorted the pacbio bam file (from https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/3_C01_customer/)
@@ -61,7 +65,13 @@ ccs(baseline) results. There are two tests run:
    best-performing configurations from the above sample well tests and ran tests
    for those configurations on this full dataset. All results are filed under
    full_data_tests. The test case details are saved in a manner similar to the
-   above sample well case.
+   above sample well cases.
+
+For both cases, the scores and alignment details for Pacbio's original ccs
+tool have been included under the baseline directory.
+
+Reference data used for blasr:
+ftp://ftp.ensemblgenomes.org/pub/release-32/plants/fasta/arabidopsis_thaliana/dna/Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz
 
 Notes:
 =====
@@ -71,8 +81,11 @@ Notes:
 2) We have included Christopher Lee's POA library in this repository to do the actual Partial-Order Alignment. It
    is included in the 'external' directory (Link - https://sourceforge.net/projects/poamsa/)
 
+3) blasr and pacbio's ccs tools are from PacbioSciences' GitHub repository
+
 External dependencies:
 =====================
 1) samtools - http://www.htslib.org/doc/samtools-1.1.html
 
 2) pysam python module - https://github.com/pysam-developers/pysam
+
