@@ -5,17 +5,20 @@ Stony Brook University. It aims to improve the consensus calling methods used to
 
 Contributors:
 1) Swaminathan Sivaraman
+
 2) Sriram Sundar
+
 3) Shyam Sundar Chandrasekaran
+
 4) Prasanth Sridhar
 
 (Stony Brook University, New York, USA)
 
 Details:
 =======
-The main tool is a python script named stonyccs.py that takes as input a pabio subreads bam(sorted) file and calls
-a consensus for each bunch or "well" of reads. It makes use of the poaligner.py and consensus.py modules to do the
-consensus alling.
+The main tool is a python script named stonyccs.py that takes as input a Pacbio subreads bam(sorted) file and calls
+a consensus for each bunch or "well" of reads. It makes use of the included poaligner.py and consensus.py modules 
+to do the consensus calling.
 
 The tool performs ordering heuristics using STAR or a modified "forward-backward" version of STAR before doing a POA.
 After doing a POA and generating a graph, the tool can use different scoring and traversal algorithms to generate
