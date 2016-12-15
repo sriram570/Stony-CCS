@@ -53,7 +53,10 @@ ccs(baseline) results. There are two kind of tests run:
    test case has its own directory named after the test case and inside, there is
    a consensus.fa file, blasr_report.txt and stonyccs_report.txt, which has the
    consensus, the mapping details to the reference and the full details of the
-   configuration used respectively. Most of the testcases are in the
+   configuration used respectively. We also ran with two more configurations - 
+   no_filters, to not filter the input reads at all, and all_filters, to filter
+   the input reads based on read quality, length etc. As no_filters casesperformed
+   really poorly, most of the testcases are for the all_filters cases and are in the
    sample_tests/all_filters directory.
 
 NOTE: One can use this sample bam file to perform quick tests on the stonyccs tool.
