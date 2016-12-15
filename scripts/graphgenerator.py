@@ -1,8 +1,8 @@
-from __future__ import print_function
 import re
 import sys
 from prettytable import PrettyTable
-import os
+import matplotlib.pyplot as plt
+
 
 max_nMisMatch =  sys.maxsize
 max_nIns = sys.maxsize
@@ -67,12 +67,58 @@ with open(sys.argv[1]) as f:
         if a[0] == 'Query':
             query_name_list.append(a[1])
 
+e = []
+x = []
+y = []
+z = []
+for i in range(0,len(nMisMatch_list)):
+    if int(nMisMatch_list[i])!=0 :
+        x.append(round(int(nMatch_list[i])/int(nMisMatch_list[i]),3))
+        y.append(round(float(sim_list[i]),3))
+        z.append(int(nMatch_list[i]))
+        t = (round(int(nMatch_list[i])/int(nMisMatch_list[i]),3),sim_list[i])
+        e.append(t)
+#print(e)
+#print(x)
+#print(y)
 
-t = PrettyTable(['Q#', 'nMatch','nMisMatch' ,'nIns' ,'nDel' ,'Sim#' ,'RawScore'])
-for i in range(0,len(query_name_list)):
-    t.add_row([query_name_list[i],nMatch_list[i],nMisMatch_list[i],nIns_list[i],nDel_list[i],sim_list[i],raw_score_list[i]])
-sys.stdout = open(os.path.dirname(sys.argv[1])+"/scores.txt",'w')
 
-print("Max_nMatch :", max_nMatch,"   Max_nMisMatch:", max_nMisMatch,"  Max_nIns:", max_nIns,"  Max_nDel:", max_nDel,"  Max_Sim:", max_sim,"  Max_RawScore:", max_raw_score)
-print("Avg_nMatch :",round(total_nMatch/counter_nMatch,3),"  Avg_nMisMatch :",round(total_nMisMatch/counter_nMisMatch,3),"  Avg_nIns :",round(total_nIns/counter_nIns,3),"  Avg_nDel :",round(total_nDel/counter_nDel,3),"  Avg_Sim :",round(total_sim/counter_sim,3),"  Avg_RawScore :",round(total_raw_score/counter_raw_score,3))
-print(t)
+t = sorted(zip(x,y))
+#print(t)
+x,y = zip(*t)
+#ylim=(0.0, 1.01)
+xlim = (0,20)
+plt.figure()
+plt.title("Match/Mismatch ratio vs SimScore")
+plt.xlabel("Match/Mismatch ratio")
+plt.ylabel("Sim Score")
+plt.grid()
+# if ylim is not None:
+#     plt.ylim(*ylim)
+if xlim is not None:
+    plt.xlim(*xlim)
+plt.plot(x, y, 'o-', color="r",
+         label="Test config")
+plt.legend(loc="best")
+plt.show()
+
+# t1 = sorted(zip(z,y))
+# print(t)
+# z,y = zip(*t1)
+# #ylim=(0.0, 1.01)
+# xlim = (0,1000)
+# plt.figure()
+# plt.title("Match  vs SimScore")
+# plt.xlabel("Match length")
+# plt.ylabel("Sim Score")
+# plt.grid()
+# # if ylim is not None:
+# #     plt.ylim(*ylim)
+# if xlim is not None:
+#     plt.xlim(*xlim)
+# plt.plot(z, y, 'o-', color="r",
+#          label="Test config2")
+# plt.legend(loc="best")
+# plt.show()
+
+

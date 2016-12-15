@@ -1,5 +1,5 @@
 Max_nMatch : 5157    Max_nMisMatch: 0   Max_nIns: 0   Max_nDel: 1   Max_Sim: 93.4783   Max_RawScore: -22546
-Avg_nMatch : 1754.0   Avg_nMisMatch : 133.0   Avg_nIns : 155.0   Max_nDel : 181.0   Avg_Sim : 79.971   Avg_RawScore : -6291.0
+Avg_nMatch : 1754.0   Avg_nMisMatch : 133.0   Avg_nIns : 155.0   Avg_nDel : 181.0   Avg_Sim : 79.971   Avg_RawScore : -6291.0
 +--------------------------+--------+-----------+------+------+---------+----------+
 |            Q#            | nMatch | nMisMatch | nIns | nDel |   Sim#  | RawScore |
 +--------------------------+--------+-----------+------+------+---------+----------+
