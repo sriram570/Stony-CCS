@@ -1,7 +1,8 @@
 from __future__ import print_function
-
 import re
 import sys
+from prettytable import PrettyTable
+import os
 
 max_nMisMatch =  sys.maxsize
 max_nIns = sys.maxsize
@@ -66,10 +67,12 @@ with open(sys.argv[1]) as f:
         if a[0] == 'Query':
             query_name_list.append(a[1])
 
-print("Max_nMatch :", max_nMatch,"   Max_nMisMatch:", max_nMisMatch,"  Max_nIns:", max_nIns,"  Max_nDel:", max_nDel,"  Max_Sim:", max_sim,"  Max_RawScore:", max_raw_score)
 
-print("Avg_nMatch :",total_nMatch/counter_nMatch,"Avg_nMisMatch :",total_nMisMatch/counter_nMisMatch,"Avg_nIns :",total_nIns/counter_nIns,"Max_nDel :",total_nDel/counter_nDel,"Avg_Sim :",total_sim/counter_sim,"Avg_RawScore :",total_raw_score/counter_raw_score)
-
-print("Q#\t\t\t\t\t\t\t nMatch\t nMisMatch\t nIns\t nDel\t Sim%\t RawScore")
+t = PrettyTable(['Q#', 'nMatch','nMisMatch' ,'nIns' ,'nDel' ,'Sim#' ,'RawScore'])
 for i in range(0,len(query_name_list)):
-    print(query_name_list[i],'\t',nMatch_list[i],'\t',nMisMatch_list[i],'\t\t',nIns_list[i],'\t',nDel_list[i],'\t',sim_list[i],'\t',raw_score_list[i])
+    t.add_row([query_name_list[i],nMatch_list[i],nMisMatch_list[i],nIns_list[i],nDel_list[i],sim_list[i],raw_score_list[i]])
+sys.stdout = open(os.path.dirname(sys.argv[1])+"/scores.txt",'w')
+
+print("Max_nMatch :", max_nMatch,"   Max_nMisMatch:", max_nMisMatch,"  Max_nIns:", max_nIns,"  Max_nDel:", max_nDel,"  Max_Sim:", max_sim,"  Max_RawScore:", max_raw_score)
+print("Avg_nMatch :",round(total_nMatch/counter_nMatch,3),"  Avg_nMisMatch :",round(total_nMisMatch/counter_nMisMatch,3),"  Avg_nIns :",round(total_nIns/counter_nIns,3),"  Max_nDel :",round(total_nDel/counter_nDel,3),"  Avg_Sim :",round(total_sim/counter_sim,3),"  Avg_RawScore :",round(total_raw_score/counter_raw_score,3))
+print(t)
