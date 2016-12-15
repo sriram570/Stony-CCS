@@ -1,0 +1,1169 @@
+    nMatch: 4401
+ nMisMatch: 673
+      nIns: 852
+      nDel: 642
+      %sim: 67.0067
+         Query: 10289984/stonyccs/0_5935
+     Raw score: -10497
+    nMatch: 4539
+ nMisMatch: 72
+      nIns: 76
+      nDel: 338
+      %sim: 90.3284
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -20193
+    nMatch: 507
+ nMisMatch: 44
+      nIns: 17
+      nDel: 37
+      %sim: 83.8017
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -2001
+    nMatch: 485
+ nMisMatch: 45
+      nIns: 13
+      nDel: 37
+      %sim: 83.6207
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1905
+    nMatch: 485
+ nMisMatch: 42
+      nIns: 16
+      nDel: 41
+      %sim: 83.0479
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1888
+    nMatch: 471
+ nMisMatch: 41
+      nIns: 22
+      nDel: 36
+      %sim: 82.6316
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1819
+    nMatch: 451
+ nMisMatch: 34
+      nIns: 23
+      nDel: 43
+      %sim: 81.8512
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1721
+    nMatch: 380
+ nMisMatch: 24
+      nIns: 15
+      nDel: 27
+      %sim: 85.2018
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1546
+    nMatch: 373
+ nMisMatch: 25
+      nIns: 11
+      nDel: 28
+      %sim: 85.3547
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -1520
+    nMatch: 248
+ nMisMatch: 14
+      nIns: 17
+      nDel: 15
+      %sim: 84.3537
+         Query: 10420342/stonyccs/0_4693
+     Raw score: -996
+    nMatch: 4661
+ nMisMatch: 330
+      nIns: 280
+      nDel: 692
+      %sim: 78.1654
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16465
+    nMatch: 4585
+ nMisMatch: 317
+      nIns: 280
+      nDel: 674
+      %sim: 78.2958
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16253
+    nMatch: 4644
+ nMisMatch: 335
+      nIns: 292
+      nDel: 702
+      %sim: 77.7499
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16240
+    nMatch: 4634
+ nMisMatch: 328
+      nIns: 309
+      nDel: 684
+      %sim: 77.817
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16237
+    nMatch: 4583
+ nMisMatch: 323
+      nIns: 276
+      nDel: 690
+      %sim: 78.0484
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16147
+    nMatch: 4637
+ nMisMatch: 336
+      nIns: 298
+      nDel: 710
+      %sim: 77.5288
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16129
+    nMatch: 4610
+ nMisMatch: 327
+      nIns: 334
+      nDel: 677
+      %sim: 77.505
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16033
+    nMatch: 4635
+ nMisMatch: 331
+      nIns: 305
+      nDel: 728
+      %sim: 77.2629
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -16024
+    nMatch: 4604
+ nMisMatch: 327
+      nIns: 321
+      nDel: 727
+      %sim: 77.0028
+         Query: 12452809/stonyccs/0_5276
+     Raw score: -15818
+    nMatch: 1629
+ nMisMatch: 78
+      nIns: 51
+      nDel: 73
+      %sim: 88.9678
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -7057
+    nMatch: 1624
+ nMisMatch: 84
+      nIns: 50
+      nDel: 71
+      %sim: 88.7917
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -7011
+    nMatch: 1630
+ nMisMatch: 78
+      nIns: 50
+      nDel: 85
+      %sim: 88.4428
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -7007
+    nMatch: 1623
+ nMisMatch: 86
+      nIns: 49
+      nDel: 72
+      %sim: 88.6885
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6994
+    nMatch: 1622
+ nMisMatch: 84
+      nIns: 52
+      nDel: 74
+      %sim: 88.5371
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6976
+    nMatch: 1624
+ nMisMatch: 79
+      nIns: 55
+      nDel: 85
+      %sim: 88.1172
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6946
+    nMatch: 1616
+ nMisMatch: 92
+      nIns: 50
+      nDel: 73
+      %sim: 88.2578
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6913
+    nMatch: 1600
+ nMisMatch: 83
+      nIns: 75
+      nDel: 71
+      %sim: 87.4795
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6772
+    nMatch: 1587
+ nMisMatch: 86
+      nIns: 85
+      nDel: 74
+      %sim: 86.6266
+         Query: 16712233/stonyccs/0_1771
+     Raw score: -6624
+    nMatch: 3779
+ nMisMatch: 26
+      nIns: 58
+      nDel: 210
+      %sim: 92.7817
+         Query: 18612800/stonyccs/0_3867
+     Raw score: -17399
+    nMatch: 1908
+ nMisMatch: 148
+      nIns: 171
+      nDel: 151
+      %sim: 80.2355
+         Query: 18612800/stonyccs/0_3867
+     Raw score: -7042
+    nMatch: 184
+ nMisMatch: 29
+      nIns: 15
+      nDel: 8
+      %sim: 77.9661
+         Query: 19792475/stonyccs/0_4244
+     Raw score: -631
+    nMatch: 4223
+ nMisMatch: 470
+      nIns: 576
+      nDel: 425
+      %sim: 74.1658
+         Query: 20972211/stonyccs/0_5415
+     Raw score: -13290
+    nMatch: 4223
+ nMisMatch: 470
+      nIns: 576
+      nDel: 425
+      %sim: 74.1658
+         Query: 20972211/stonyccs/0_5415
+     Raw score: -13290
+    nMatch: 373
+ nMisMatch: 69
+      nIns: 55
+      nDel: 55
+      %sim: 67.5725
+         Query: 20972211/stonyccs/0_5415
+     Raw score: -901
+    nMatch: 240
+ nMisMatch: 7
+      nIns: 32
+      nDel: 18
+      %sim: 80.8081
+         Query: 23265565/stonyccs/0_661
+     Raw score: -908
+    nMatch: 414
+ nMisMatch: 17
+      nIns: 36
+      nDel: 33
+      %sim: 82.8
+         Query: 23855531/stonyccs/0_567
+     Raw score: -1623
+    nMatch: 3181
+ nMisMatch: 117
+      nIns: 455
+      nDel: 410
+      %sim: 76.4112
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -10878
+    nMatch: 384
+ nMisMatch: 33
+      nIns: 33
+      nDel: 23
+      %sim: 81.1839
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1442
+    nMatch: 306
+ nMisMatch: 21
+      nIns: 15
+      nDel: 9
+      %sim: 87.1795
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1284
+    nMatch: 303
+ nMisMatch: 20
+      nIns: 16
+      nDel: 11
+      %sim: 86.5714
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1260
+    nMatch: 289
+ nMisMatch: 22
+      nIns: 14
+      nDel: 8
+      %sim: 86.7868
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1203
+    nMatch: 287
+ nMisMatch: 12
+      nIns: 26
+      nDel: 6
+      %sim: 86.7069
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1203
+    nMatch: 241
+ nMisMatch: 9
+      nIns: 11
+      nDel: 8
+      %sim: 89.5911
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -1056
+    nMatch: 277
+ nMisMatch: 16
+      nIns: 49
+      nDel: 9
+      %sim: 78.9174
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -999
+    nMatch: 243
+ nMisMatch: 21
+      nIns: 15
+      nDel: 10
+      %sim: 84.083
+         Query: 23986889/stonyccs/0_3754
+     Raw score: -964
+    nMatch: 1163
+ nMisMatch: 130
+      nIns: 263
+      nDel: 137
+      %sim: 68.6946
+         Query: 24445639/stonyccs/0_1965
+     Raw score: -3035
+    nMatch: 1581
+ nMisMatch: 135
+      nIns: 269
+      nDel: 73
+      %sim: 76.8222
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5385
+    nMatch: 1586
+ nMisMatch: 130
+      nIns: 269
+      nDel: 86
+      %sim: 76.5814
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5375
+    nMatch: 1580
+ nMisMatch: 136
+      nIns: 269
+      nDel: 74
+      %sim: 76.7363
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5369
+    nMatch: 1579
+ nMisMatch: 141
+      nIns: 265
+      nDel: 77
+      %sim: 76.5761
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5339
+    nMatch: 1574
+ nMisMatch: 139
+      nIns: 271
+      nDel: 71
+      %sim: 76.5937
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5326
+    nMatch: 1563
+ nMisMatch: 133
+      nIns: 274
+      nDel: 78
+      %sim: 76.3184
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5257
+    nMatch: 1568
+ nMisMatch: 135
+      nIns: 282
+      nDel: 76
+      %sim: 76.0796
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5240
+    nMatch: 1556
+ nMisMatch: 136
+      nIns: 293
+      nDel: 71
+      %sim: 75.6809
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5144
+    nMatch: 1500
+ nMisMatch: 116
+      nIns: 265
+      nDel: 71
+      %sim: 76.8443
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -5124
+    nMatch: 1541
+ nMisMatch: 137
+      nIns: 307
+      nDel: 78
+      %sim: 74.697
+         Query: 24576586/stonyccs/0_1989
+     Raw score: -4958
+    nMatch: 66
+ nMisMatch: 2
+      nIns: 2
+      nDel: 1
+      %sim: 92.9577
+         Query: 24838650/stonyccs/0_650
+     Raw score: -303
+    nMatch: 1417
+ nMisMatch: 133
+      nIns: 110
+      nDel: 114
+      %sim: 79.876
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -5167
+    nMatch: 1398
+ nMisMatch: 133
+      nIns: 107
+      nDel: 108
+      %sim: 80.0687
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -5117
+    nMatch: 1398
+ nMisMatch: 133
+      nIns: 107
+      nDel: 109
+      %sim: 80.0229
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -5112
+    nMatch: 1386
+ nMisMatch: 149
+      nIns: 125
+      nDel: 121
+      %sim: 77.8214
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4806
+    nMatch: 1224
+ nMisMatch: 115
+      nIns: 83
+      nDel: 93
+      %sim: 80.7921
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4550
+    nMatch: 1237
+ nMisMatch: 136
+      nIns: 81
+      nDel: 89
+      %sim: 80.1685
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4519
+    nMatch: 1213
+ nMisMatch: 126
+      nIns: 83
+      nDel: 92
+      %sim: 80.1189
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4434
+    nMatch: 1102
+ nMisMatch: 94
+      nIns: 84
+      nDel: 91
+      %sim: 80.3793
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4071
+    nMatch: 1097
+ nMisMatch: 92
+      nIns: 91
+      nDel: 91
+      %sim: 80.0146
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -4023
+    nMatch: 859
+ nMisMatch: 91
+      nIns: 85
+      nDel: 60
+      %sim: 78.4475
+         Query: 24904429/stonyccs/0_3024
+     Raw score: -3024
+    nMatch: 5129
+ nMisMatch: 139
+      nIns: 264
+      nDel: 189
+      %sim: 89.6522
+         Query: 26214814/stonyccs/0_5533
+     Raw score: -22546
+    nMatch: 5126
+ nMisMatch: 142
+      nIns: 264
+      nDel: 183
+      %sim: 89.6938
+         Query: 26214814/stonyccs/0_5533
+     Raw score: -22543
+    nMatch: 2582
+ nMisMatch: 246
+      nIns: 223
+      nDel: 423
+      %sim: 74.3235
+         Query: 26608528/stonyccs/0_3907
+     Raw score: -8204
+    nMatch: 151
+ nMisMatch: 16
+      nIns: 8
+      nDel: 7
+      %sim: 82.967
+         Query: 26608528/stonyccs/0_3907
+     Raw score: -584
+    nMatch: 82
+ nMisMatch: 6
+      nIns: 5
+      nDel: 4
+      %sim: 84.5361
+         Query: 26608528/stonyccs/0_3907
+     Raw score: -329
+    nMatch: 4241
+ nMisMatch: 76
+      nIns: 131
+      nDel: 346
+      %sim: 88.4647
+         Query: 27263274/stonyccs/0_4453
+     Raw score: -18364
+    nMatch: 1737
+ nMisMatch: 70
+      nIns: 132
+      nDel: 87
+      %sim: 85.7354
+         Query: 28771072/stonyccs/0_1942
+     Raw score: -7170
+    nMatch: 5015
+ nMisMatch: 92
+      nIns: 245
+      nDel: 242
+      %sim: 89.6496
+         Query: 29688002/stonyccs/0_5354
+     Raw score: -22088
+    nMatch: 5015
+ nMisMatch: 92
+      nIns: 245
+      nDel: 242
+      %sim: 89.6496
+         Query: 29688002/stonyccs/0_5354
+     Raw score: -22088
+    nMatch: 466
+ nMisMatch: 9
+      nIns: 15
+      nDel: 28
+      %sim: 89.9614
+         Query: 29688002/stonyccs/0_5354
+     Raw score: -2061
+    nMatch: 2968
+ nMisMatch: 246
+      nIns: 231
+      nDel: 255
+      %sim: 80.2162
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10934
+    nMatch: 2953
+ nMisMatch: 235
+      nIns: 240
+      nDel: 250
+      %sim: 80.2882
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10905
+    nMatch: 2967
+ nMisMatch: 244
+      nIns: 230
+      nDel: 266
+      %sim: 80.0378
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10891
+    nMatch: 2954
+ nMisMatch: 247
+      nIns: 244
+      nDel: 261
+      %sim: 79.7086
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10763
+    nMatch: 2954
+ nMisMatch: 233
+      nIns: 270
+      nDel: 258
+      %sim: 79.5155
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10732
+    nMatch: 2955
+ nMisMatch: 241
+      nIns: 261
+      nDel: 277
+      %sim: 79.1377
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10639
+    nMatch: 2939
+ nMisMatch: 247
+      nIns: 267
+      nDel: 249
+      %sim: 79.3895
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10633
+    nMatch: 2952
+ nMisMatch: 242
+      nIns: 263
+      nDel: 278
+      %sim: 79.0361
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10603
+    nMatch: 2949
+ nMisMatch: 241
+      nIns: 267
+      nDel: 281
+      %sim: 78.8925
+         Query: 30540436/stonyccs/0_3462
+     Raw score: -10559
+    nMatch: 2517
+ nMisMatch: 149
+      nIns: 168
+      nDel: 282
+      %sim: 80.7766
+         Query: 30606281/stonyccs/0_2841
+     Raw score: -9441
+    nMatch: 3290
+ nMisMatch: 282
+      nIns: 469
+      nDel: 260
+      %sim: 76.4938
+         Query: 30671334/stonyccs/0_5448
+     Raw score: -11113
+    nMatch: 1811
+ nMisMatch: 140
+      nIns: 90
+      nDel: 137
+      %sim: 83.1497
+         Query: 30671334/stonyccs/0_5448
+     Raw score: -7080
+    nMatch: 1022
+ nMisMatch: 33
+      nIns: 70
+      nDel: 33
+      %sim: 88.2556
+         Query: 31261374/stonyccs/0_2853
+     Raw score: -4397
+    nMatch: 208
+ nMisMatch: 19
+      nIns: 42
+      nDel: 8
+      %sim: 75.0903
+         Query: 31261374/stonyccs/0_2853
+     Raw score: -676
+    nMatch: 199
+ nMisMatch: 16
+      nIns: 41
+      nDel: 8
+      %sim: 75.3788
+         Query: 31261374/stonyccs/0_2853
+     Raw score: -654
+    nMatch: 2886
+ nMisMatch: 300
+      nIns: 206
+      nDel: 423
+      %sim: 75.6488
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9485
+    nMatch: 2895
+ nMisMatch: 297
+      nIns: 200
+      nDel: 452
+      %sim: 75.3122
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9433
+    nMatch: 2895
+ nMisMatch: 297
+      nIns: 202
+      nDel: 453
+      %sim: 75.2534
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9418
+    nMatch: 2892
+ nMisMatch: 303
+      nIns: 199
+      nDel: 449
+      %sim: 75.2537
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9402
+    nMatch: 2890
+ nMisMatch: 297
+      nIns: 202
+      nDel: 452
+      %sim: 75.2408
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9398
+    nMatch: 2888
+ nMisMatch: 300
+      nIns: 201
+      nDel: 450
+      %sim: 75.2279
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9385
+    nMatch: 2873
+ nMisMatch: 302
+      nIns: 211
+      nDel: 432
+      %sim: 75.2488
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9338
+    nMatch: 2880
+ nMisMatch: 299
+      nIns: 210
+      nDel: 460
+      %sim: 74.8246
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9256
+    nMatch: 2881
+ nMisMatch: 298
+      nIns: 213
+      nDel: 460
+      %sim: 74.7923
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9252
+    nMatch: 2876
+ nMisMatch: 303
+      nIns: 210
+      nDel: 461
+      %sim: 74.7013
+         Query: 33620609/stonyccs/0_3479
+     Raw score: -9207
+    nMatch: 2276
+ nMisMatch: 200
+      nIns: 832
+      nDel: 109
+      %sim: 66.6081
+         Query: 34799710/stonyccs/0_3605
+     Raw score: -5475
+    nMatch: 4871
+ nMisMatch: 681
+      nIns: 535
+      nDel: 799
+      %sim: 70.7377
+         Query: 35718139/stonyccs/0_6097
+     Raw score: -13599
+    nMatch: 2141
+ nMisMatch: 194
+      nIns: 558
+      nDel: 287
+      %sim: 67.327
+         Query: 36111012/stonyccs/0_2992
+     Raw score: -5316
+    nMatch: 1194
+ nMisMatch: 223
+      nIns: 134
+      nDel: 225
+      %sim: 67.2297
+         Query: 37552758/stonyccs/0_1559
+     Raw score: -2837
+    nMatch: 1208
+ nMisMatch: 135
+      nIns: 156
+      nDel: 378
+      %sim: 64.358
+         Query: 37552758/stonyccs/0_1559
+     Raw score: -2560
+    nMatch: 2691
+ nMisMatch: 157
+      nIns: 313
+      nDel: 210
+      %sim: 79.8279
+         Query: 40632549/stonyccs/0_4235
+     Raw score: -9898
+    nMatch: 2124
+ nMisMatch: 207
+      nIns: 154
+      nDel: 382
+      %sim: 74.0844
+         Query: 43844323/stonyccs/0_2486
+     Raw score: -6698
+    nMatch: 98
+ nMisMatch: 19
+      nIns: 20
+      nDel: 6
+      %sim: 68.5315
+         Query: 43844323/stonyccs/0_2486
+     Raw score: -246
+    nMatch: 694
+ nMisMatch: 58
+      nIns: 76
+      nDel: 67
+      %sim: 77.5419
+         Query: 48628530/stonyccs/0_850
+     Raw score: -2407
+    nMatch: 1793
+ nMisMatch: 88
+      nIns: 86
+      nDel: 173
+      %sim: 83.785
+         Query: 48693832/stonyccs/0_2549
+     Raw score: -7142
+    nMatch: 707
+ nMisMatch: 102
+      nIns: 68
+      nDel: 112
+      %sim: 71.4864
+         Query: 48693832/stonyccs/0_2549
+     Raw score: -2023
+    nMatch: 465
+ nMisMatch: 17
+      nIns: 86
+      nDel: 19
+      %sim: 79.2164
+         Query: 48693832/stonyccs/0_2549
+     Raw score: -1698
+    nMatch: 4147
+ nMisMatch: 337
+      nIns: 349
+      nDel: 726
+      %sim: 74.5997
+         Query: 50201048/stonyccs/0_6109
+     Raw score: -13338
+    nMatch: 1921
+ nMisMatch: 122
+      nIns: 367
+      nDel: 129
+      %sim: 75.6597
+         Query: 50201048/stonyccs/0_6109
+     Raw score: -6393
+    nMatch: 492
+ nMisMatch: 81
+      nIns: 60
+      nDel: 122
+      %sim: 65.1656
+         Query: 50201048/stonyccs/0_6109
+     Raw score: -1064
+    nMatch: 63
+ nMisMatch: 3
+      nIns: 2
+      nDel: 1
+      %sim: 91.3043
+         Query: 50201048/stonyccs/0_6109
+     Raw score: -282
+    nMatch: 3167
+ nMisMatch: 56
+      nIns: 101
+      nDel: 223
+      %sim: 89.2867
+         Query: 50463430/stonyccs/0_3329
+     Raw score: -13879
+    nMatch: 186
+ nMisMatch: 7
+      nIns: 5
+      nDel: 16
+      %sim: 86.9159
+         Query: 50463430/stonyccs/0_3329
+     Raw score: -783
+    nMatch: 86
+ nMisMatch: 0
+      nIns: 0
+      nDel: 6
+      %sim: 93.4783
+         Query: 50463430/stonyccs/0_3329
+     Raw score: -400
+    nMatch: 86
+ nMisMatch: 0
+      nIns: 0
+      nDel: 6
+      %sim: 93.4783
+         Query: 50463430/stonyccs/0_3329
+     Raw score: -400
+    nMatch: 2800
+ nMisMatch: 166
+      nIns: 475
+      nDel: 158
+      %sim: 77.7994
+         Query: 53936725/stonyccs/0_4455
+     Raw score: -9839
+    nMatch: 4095
+ nMisMatch: 281
+      nIns: 523
+      nDel: 289
+      %sim: 78.9322
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -14729
+    nMatch: 1182
+ nMisMatch: 113
+      nIns: 148
+      nDel: 115
+      %sim: 75.8665
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -3917
+    nMatch: 464
+ nMisMatch: 65
+      nIns: 51
+      nDel: 36
+      %sim: 75.3247
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -1495
+    nMatch: 448
+ nMisMatch: 64
+      nIns: 53
+      nDel: 37
+      %sim: 74.4186
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -1406
+    nMatch: 304
+ nMisMatch: 40
+      nIns: 31
+      nDel: 28
+      %sim: 75.4342
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -985
+    nMatch: 251
+ nMisMatch: 31
+      nIns: 16
+      nDel: 14
+      %sim: 80.4487
+         Query: 54198504/stonyccs/0_5992
+     Raw score: -919
+    nMatch: 119
+ nMisMatch: 18
+      nIns: 13
+      nDel: 17
+      %sim: 71.2575
+         Query: 56689088/stonyccs/0_3731
+     Raw score: -337
+    nMatch: 118
+ nMisMatch: 16
+      nIns: 12
+      nDel: 22
+      %sim: 70.2381
+         Query: 56689088/stonyccs/0_3731
+     Raw score: -324
+    nMatch: 73
+ nMisMatch: 10
+      nIns: 9
+      nDel: 7
+      %sim: 73.7374
+         Query: 56689088/stonyccs/0_3731
+     Raw score: -225
+    nMatch: 2952
+ nMisMatch: 43
+      nIns: 80
+      nDel: 320
+      %sim: 86.9514
+         Query: 56951192/stonyccs/0_3079
+     Raw score: -12502
+    nMatch: 178
+ nMisMatch: 19
+      nIns: 10
+      nDel: 8
+      %sim: 82.7907
+         Query: 57279030/stonyccs/0_244
+     Raw score: -686
+    nMatch: 177
+ nMisMatch: 20
+      nIns: 10
+      nDel: 8
+      %sim: 82.3256
+         Query: 57279030/stonyccs/0_244
+     Raw score: -675
+    nMatch: 155
+ nMisMatch: 5
+      nIns: 4
+      nDel: 14
+      %sim: 87.0787
+         Query: 57279030/stonyccs/0_244
+     Raw score: -655
+    nMatch: 155
+ nMisMatch: 6
+      nIns: 3
+      nDel: 14
+      %sim: 87.0787
+         Query: 57279030/stonyccs/0_244
+     Raw score: -654
+    nMatch: 147
+ nMisMatch: 4
+      nIns: 4
+      nDel: 12
+      %sim: 88.0239
+         Query: 57279030/stonyccs/0_244
+     Raw score: -631
+    nMatch: 145
+ nMisMatch: 6
+      nIns: 4
+      nDel: 12
+      %sim: 86.8263
+         Query: 57279030/stonyccs/0_244
+     Raw score: -609
+    nMatch: 140
+ nMisMatch: 7
+      nIns: 3
+      nDel: 14
+      %sim: 85.3659
+         Query: 57279030/stonyccs/0_244
+     Raw score: -573
+    nMatch: 127
+ nMisMatch: 5
+      nIns: 3
+      nDel: 5
+      %sim: 90.7143
+         Query: 57279030/stonyccs/0_244
+     Raw score: -565
+    nMatch: 100
+ nMisMatch: 4
+      nIns: 1
+      nDel: 3
+      %sim: 92.5926
+         Query: 57279030/stonyccs/0_244
+     Raw score: -456
+    nMatch: 3706
+ nMisMatch: 154
+      nIns: 259
+      nDel: 337
+      %sim: 83.1688
+         Query: 57868524/stonyccs/0_4120
+     Raw score: -14626
+    nMatch: 4874
+ nMisMatch: 671
+      nIns: 710
+      nDel: 660
+      %sim: 70.4845
+         Query: 59900783/stonyccs/0_6273
+     Raw score: -13494
+    nMatch: 1475
+ nMisMatch: 214
+      nIns: 215
+      nDel: 217
+      %sim: 69.5427
+         Query: 59900783/stonyccs/0_6273
+     Raw score: -3931
+    nMatch: 5157
+ nMisMatch: 213
+      nIns: 231
+      nDel: 451
+      %sim: 85.2115
+         Query: 60162663/stonyccs/0_5613
+     Raw score: -21097
+    nMatch: 93
+ nMisMatch: 11
+      nIns: 21
+      nDel: 7
+      %sim: 70.4545
+         Query: 60162663/stonyccs/0_5613
+     Raw score: -259
+    nMatch: 2877
+ nMisMatch: 217
+      nIns: 209
+      nDel: 226
+      %sim: 81.5245
+         Query: 60424684/stonyccs/0_3313
+     Raw score: -10908
+    nMatch: 730
+ nMisMatch: 86
+      nIns: 88
+      nDel: 69
+      %sim: 75.0257
+         Query: 60620873/stonyccs/0_3438
+     Raw score: -2349
+    nMatch: 1436
+ nMisMatch: 159
+      nIns: 142
+      nDel: 140
+      %sim: 76.5051
+         Query: 61080132/stonyccs/0_2264
+     Raw score: -4816
+    nMatch: 255
+ nMisMatch: 40
+      nIns: 30
+      nDel: 24
+      %sim: 73.0659
+         Query: 61080132/stonyccs/0_2264
+     Raw score: -765
+    nMatch: 183
+ nMisMatch: 34
+      nIns: 17
+      nDel: 22
+      %sim: 71.4844
+         Query: 61080132/stonyccs/0_2264
+     Raw score: -516
+    nMatch: 162
+ nMisMatch: 17
+      nIns: 35
+      nDel: 11
+      %sim: 72
+         Query: 61080132/stonyccs/0_2264
+     Raw score: -478
+    nMatch: 2439
+ nMisMatch: 220
+      nIns: 249
+      nDel: 481
+      %sim: 71.9681
+         Query: 62914913/stonyccs/0_3229
+     Raw score: -7225
+    nMatch: 2688
+ nMisMatch: 138
+      nIns: 257
+      nDel: 281
+      %sim: 79.9049
+         Query: 65340091/stonyccs/0_3090
+     Raw score: -9922
+    nMatch: 447
+ nMisMatch: 20
+      nIns: 19
+      nDel: 33
+      %sim: 86.1272
+         Query: 65340091/stonyccs/0_3090
+     Raw score: -1855
+    nMatch: 63
+ nMisMatch: 2
+      nIns: 2
+      nDel: 3
+      %sim: 90
+         Query: 65340091/stonyccs/0_3090
+     Raw score: -278
+    nMatch: 1792
+ nMisMatch: 225
+      nIns: 263
+      nDel: 277
+      %sim: 70.0821
+         Query: 65471452/stonyccs/0_3319
+     Raw score: -4910
+    nMatch: 750
+ nMisMatch: 31
+      nIns: 51
+      nDel: 30
+      %sim: 87.007
+         Query: 65471452/stonyccs/0_3319
+     Raw score: -3159
+    nMatch: 755
+ nMisMatch: 12
+      nIns: 10
+      nDel: 62
+      %sim: 89.9881
+         Query: 65536136/stonyccs/0_778
+     Raw score: -3343
+    nMatch: 1645
+ nMisMatch: 151
+      nIns: 251
+      nDel: 115
+      %sim: 76.087
+         Query: 66650435/stonyccs/0_2360
+     Raw score: -5489
+    nMatch: 216
+ nMisMatch: 36
+      nIns: 16
+      nDel: 35
+      %sim: 71.2871
+         Query: 66650435/stonyccs/0_2360
+     Raw score: -609
+    nMatch: 153
+ nMisMatch: 11
+      nIns: 17
+      nDel: 6
+      %sim: 81.8182
+         Query: 70386582/stonyccs/0_313
+     Raw score: -584
+    nMatch: 516
+ nMisMatch: 19
+      nIns: 40
+      nDel: 14
+      %sim: 87.6061
+         Query: 72418124/stonyccs/0_1109
+     Raw score: -2196
+    nMatch: 1452
+ nMisMatch: 172
+      nIns: 116
+      nDel: 129
+      %sim: 77.6886
+         Query: 72549166/stonyccs/0_3876
+     Raw score: -5003
+    nMatch: 1895
+ nMisMatch: 156
+      nIns: 175
+      nDel: 289
+      %sim: 75.3479
+         Query: 74383589/stonyccs/0_4482
+     Raw score: -6219
+    nMatch: 150
+ nMisMatch: 17
+      nIns: 25
+      nDel: 6
+      %sim: 75.7576
+         Query: 74383589/stonyccs/0_4482
+     Raw score: -493
