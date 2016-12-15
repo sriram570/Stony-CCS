@@ -1,6 +1,6 @@
 # README
 
-This is a consensus calling tool created as part of the CSE 549 - Computational Biology final project at 
+This is a consensus calling tool (named stonyccs) created as part of the CSE 549 - Computational Biology final project at 
 Stony Brook University. It aims to improve the consensus calling methods used to call Pacbio long reads.
 
 (An included report.pdf file details the methods attempted and results observed)
@@ -15,7 +15,8 @@ Contributors:
 
 4) Prasanth Sridhar
 
-(Stony Brook University, New York, USA)
+December, 2016
+Stony Brook University, New York, USA
 
 Details:
 =======
@@ -30,6 +31,9 @@ command-line options.
 
 The script also needs a scoring matrix. Two popular matrices - blosum62 and blosum80 have been included to be used.
 (blosum62 is generally preferred for Pacbio data)
+
+One can use the sample_bam.bam file provided in the samples_tests directory to
+run quick tests of or see the working of the tool.
 
 How To Run:
 ==========
