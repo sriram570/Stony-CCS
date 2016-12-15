@@ -366,6 +366,7 @@ def main():
     inf = pysam.AlignmentFile(opts.input_file, 'rb', check_sq=False)
     
     seq_data = {}
+    movie_name = 'null'
 
     # Step 1: Read all sequences and choose the relevant ones to do ccs for
     cur_seq_id = -1
@@ -375,6 +376,7 @@ def main():
         qname  = line.qname # Looks like "name/12345/23_34"
         seq_id = int(qname.split('/')[1])
         if i == 0:
+            movie_name = qname.split('/')[0]
             cur_seq_id = seq_id
         if seq_id > cur_seq_id:
             # Process previous sequences
@@ -406,7 +408,7 @@ def main():
     if seqs_used_for_ccs > 0:
         fastaf = open(opts.output_file_prefix + '.fa', 'w')
         for well_id in sorted(ccs_seqs):
-            fastaf.write('>' + str(well_id) + '/stonyccs\n')
+            fastaf.write('>' + movie_name + '/' + str(well_id) + '/stonyccs\n')
             fastaf.write(ccs_seqs[well_id] + '\n')
         fastaf.close()
         log_info("Generated consensus file - %s" % fastaf.name)
