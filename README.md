@@ -15,8 +15,7 @@ Contributors:
 
 4) Prasanth Sridhar
 
-December, 2016
-Stony Brook University, New York, USA
+December 2016, Stony Brook University, New York, USA
 
 Details:
 =======
@@ -112,4 +111,3 @@ Testcase organization:
    
 5) The original pbccs results (baseline) are also saved for both sample and full data cases in the sample_tests/baseline/ and
    the full_data_tests/baseline directories
-
