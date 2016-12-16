@@ -7,16 +7,15 @@ Stony Brook University. It aims to improve the consensus calling methods used to
 
 Contributors:
 
-1) Swaminathan Sivaraman
+1) Swaminathan Sivaraman (110951180)
 
-2) Sriram Sundar
+2) Sriram Sundar (110921718)
 
-3) Shyam Sundar Chandrasekaran
+3) Shyam Sundar Chandrasekaran (110815338)
 
-4) Prasanth Sridhar
+4) Prasanth Sridhar (110899181)
 
-December, 2016
-Stony Brook University, New York, USA
+December 2016, Stony Brook University, New York, USA
 
 Details:
 =======
@@ -43,6 +42,22 @@ How To Run:
 
 3) To clean, use 'make clean'
 
+Notes:
+=====
+1) This script must be run only on pacbio bam files sorted by queryname 
+   (Use 'samtools sort -n' to sort an unsorted .bam file)
+   
+2) We have included Christopher Lee's POA library in this repository to do the actual Partial-Order Alignment. It
+   is included in the 'external' directory (Link - https://sourceforge.net/projects/poamsa/)
+
+3) blasr and pacbio's ccs tools are from PacbioSciences' GitHub repository
+
+External dependencies:
+=====================
+1) samtools - http://www.htslib.org/doc/samtools-1.1.html
+
+2) pysam python module - https://github.com/pysam-developers/pysam
+
 Tests:
 =====
 We have performed tests on the new stonyccs tool and compared it with pacbio's
@@ -67,7 +82,7 @@ NOTE: One can use this sample bam file to perform quick tests on the stonyccs to
 
 2) Full data tests:
 
-   Here, we sorted the pacbio bam file (from https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/3_C01_customer/)
+   Here, we took the pacbio bam file (from https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/3_C01_customer/)
    and sorted it by queryname and created a sorted bam file. We then chose the
    best-performing configurations from the above sample well tests and ran tests
    for those configurations on this full dataset. All results are filed under
@@ -82,19 +97,17 @@ tool have been included under the baseline directory.
 Reference data used for blasr:
 ftp://ftp.ensemblgenomes.org/pub/release-32/plants/fasta/arabidopsis_thaliana/dna/Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz
 
-Notes:
-=====
-1) This script must be run only on pacbio bam files sorted by queryname 
-   (Use 'samtools sort -n' to sort an unsorted .bam file)
+Testcase organization:
+---------------------
+1) The sample data test results are in the sample_tests/no_filters/ and sample_tests/all_filters/ directories
+
+2) The full data test results are in the full_data_tests/ directory
+
+3) Each test case is present as a directory. The directory names are shorthand names for the ordering algorithm used, the scoring function
+   used and the traversal algorithm used. Finally, it is specified if the blosum62 or blosum80 matrix was used to generate the consensus
    
-2) We have included Christopher Lee's POA library in this repository to do the actual Partial-Order Alignment. It
-   is included in the 'external' directory (Link - https://sourceforge.net/projects/poamsa/)
-
-3) blasr and pacbio's ccs tools are from PacbioSciences' GitHub repository
-
-External dependencies:
-=====================
-1) samtools - http://www.htslib.org/doc/samtools-1.1.html
-
-2) pysam python module - https://github.com/pysam-developers/pysam
-
+4) Each test case directory has a consensus.fa file, a stonyccs_report.txt file and a blasr_report.txt file. For full_data test cases,
+   there is also a scores.txt file which summarizes multiple scores and gives an average
+   
+5) The original pbccs results (baseline) are also saved for both sample and full data cases in the sample_tests/baseline/ and
+   the full_data_tests/baseline directories
