@@ -43,6 +43,22 @@ How To Run:
 
 3) To clean, use 'make clean'
 
+Notes:
+=====
+1) This script must be run only on pacbio bam files sorted by queryname 
+   (Use 'samtools sort -n' to sort an unsorted .bam file)
+   
+2) We have included Christopher Lee's POA library in this repository to do the actual Partial-Order Alignment. It
+   is included in the 'external' directory (Link - https://sourceforge.net/projects/poamsa/)
+
+3) blasr and pacbio's ccs tools are from PacbioSciences' GitHub repository
+
+External dependencies:
+=====================
+1) samtools - http://www.htslib.org/doc/samtools-1.1.html
+
+2) pysam python module - https://github.com/pysam-developers/pysam
+
 Tests:
 =====
 We have performed tests on the new stonyccs tool and compared it with pacbio's
@@ -82,19 +98,18 @@ tool have been included under the baseline directory.
 Reference data used for blasr:
 ftp://ftp.ensemblgenomes.org/pub/release-32/plants/fasta/arabidopsis_thaliana/dna/Arabidopsis_thaliana.TAIR10.dna.chromosome.1.fa.gz
 
-Notes:
-=====
-1) This script must be run only on pacbio bam files sorted by queryname 
-   (Use 'samtools sort -n' to sort an unsorted .bam file)
+Testcase organization:
+---------------------
+1) The sample data test results are in the sample_tests/no_filters/ and sample_tests/all_filters/ directories
+
+2) The full data test results are in the full_data_tests/ directory
+
+3) Each test case is present as a directory. The directory names are shorthand names for the ordering algorithm used, the scoring function
+   used and the traversal algorithm used. Finally, it is specified if the blosum62 or blosum80 matrix was used to generate the consensus
    
-2) We have included Christopher Lee's POA library in this repository to do the actual Partial-Order Alignment. It
-   is included in the 'external' directory (Link - https://sourceforge.net/projects/poamsa/)
-
-3) blasr and pacbio's ccs tools are from PacbioSciences' GitHub repository
-
-External dependencies:
-=====================
-1) samtools - http://www.htslib.org/doc/samtools-1.1.html
-
-2) pysam python module - https://github.com/pysam-developers/pysam
+4) Each test case directory has a consensus.fa file, a stonyccs_report.txt file and a blasr_report.txt file. For full_data test cases,
+   there is also a scores.txt file which summarizes multiple scores and gives an average
+   
+5) The original pbccs results (baseline) are also saved for both sample and full data cases in the sample_tests/baseline/ and
+   the full_data_tests/baseline directories
 
