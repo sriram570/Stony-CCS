@@ -82,7 +82,7 @@ NOTE: One can use this sample bam file to perform quick tests on the stonyccs to
 
 2) Full data tests:
 
-   Here, we sorted the pacbio bam file (from https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/3_C01_customer/)
+   Here, we took the pacbio bam file (from https://downloads.pacbcloud.com/public/SequelData/ArabidopsisDemoData/SequenceData/3_C01_customer/)
    and sorted it by queryname and created a sorted bam file. We then chose the
    best-performing configurations from the above sample well tests and ran tests
    for those configurations on this full dataset. All results are filed under
