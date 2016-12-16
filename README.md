@@ -109,5 +109,5 @@ Testcase organization:
 4) Each test case directory has a consensus.fa file, a stonyccs_report.txt file and a blasr_report.txt file. For full_data test cases,
    there is also a scores.txt file which summarizes multiple scores and gives an average
    
-5) The original pbccs results (baseline) are also saved for both sample and full data cases in the sample_tests/baseline/ and
+5) The original pbccs (Pacbio's ccs with --noPolish flag) results (baseline) are also saved for both sample and full data cases in the sample_tests/baseline/ and
    the full_data_tests/baseline directories
