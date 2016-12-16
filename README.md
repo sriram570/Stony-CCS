@@ -7,13 +7,13 @@ Stony Brook University. It aims to improve the consensus calling methods used to
 
 Contributors:
 
-1) Swaminathan Sivaraman
+1) Swaminathan Sivaraman (110951180)
 
-2) Sriram Sundar
+2) Sriram Sundar (110921718)
 
-3) Shyam Sundar Chandrasekaran
+3) Shyam Sundar Chandrasekaran (110815338)
 
-4) Prasanth Sridhar
+4) Prasanth Sridhar (110899181)
 
 December 2016, Stony Brook University, New York, USA
 
